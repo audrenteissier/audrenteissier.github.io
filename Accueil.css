@@ -8,22 +8,20 @@
 }
 
 .u-section-1 .u-text-1 {
-  width: 538px;
   font-family: "Advent Pro";
-  margin: 60px auto 0;
+  animation-duration: 4500ms;
+  width: 538px;
+  margin: 330px auto 0;
 }
 
 .u-section-1 .u-text-2 {
+  animation-duration: 3000ms;
   margin: 30px 157px 60px;
 }
 
 @media (max-width: 1199px) {
   .u-section-1 .u-sheet-1 {
     min-height: 660px;
-  }
-
-  .u-section-1 .u-text-1 {
-    margin-top: 330px;
   }
 
   .u-section-1 .u-text-2 {
