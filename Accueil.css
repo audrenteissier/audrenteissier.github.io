@@ -24,7 +24,7 @@
 
 .u-section-1 .u-text-2 {
   animation-duration: 3000ms;
-  margin: 16px 157px 60px;
+  margin: 16px 157px 0;
 }
 
 @media (max-width: 1199px) {
@@ -35,6 +35,7 @@
   .u-section-1 .u-text-2 {
     margin-left: 57px;
     margin-right: 57px;
+    margin-bottom: 60px;
   }
 }
 
@@ -167,14 +168,31 @@
 }
 
 @media (max-width: 1199px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 657px;
+  }
+
+  .u-section-2 .u-list-1 {
+    width: 811px;
+    margin: 38px auto 33px 32px;
+  }
+
   .u-section-2 .u-repeater-1 {
-    grid-auto-columns: calc(33.333333333333336% - 22px);
     grid-template-columns: 33.3333% 33.3333% 33.3333%;
-    min-height: 332px;
+    min-height: 438px;
   }
 
   .u-section-2 .u-list-item-1 {
     background-size: auto;
+  }
+
+  .u-section-2 .u-container-layout-1 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .u-section-2 .u-icon-1 {
+    margin-top: 1px;
   }
 
   .u-section-2 .u-text-4 {
@@ -202,24 +220,40 @@
 }
 
 @media (max-width: 991px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 1387px;
+  }
+
+  .u-section-2 .u-list-1 {
+    width: 720px;
+    margin-right: 20px;
+    margin-left: -20px;
+  }
+
   .u-section-2 .u-repeater-1 {
     grid-auto-columns: calc(50% - 16.5px);
     grid-template-columns: 50% 50%;
-    min-height: 763px;
+    min-height: 1168px;
   }
 }
 
 @media (max-width: 767px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 297px;
+  }
+
   .u-section-2 .u-text-1 {
-    width: auto;
-    margin-left: 0;
-    margin-right: 0;
+    width: 540px;
   }
 
   .u-section-2 .u-text-2 {
-    width: auto;
-    margin-left: 0;
+    width: 540px;
+  }
+
+  .u-section-2 .u-list-1 {
+    width: 540px;
     margin-right: 0;
+    margin-left: 0;
   }
 
   .u-section-2 .u-repeater-1 {
@@ -243,8 +277,21 @@
 }
 
 @media (max-width: 575px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 174px;
+  }
+
   .u-section-2 .u-text-1 {
     font-size: 1.5rem;
+    width: 340px;
+  }
+
+  .u-section-2 .u-text-2 {
+    width: 340px;
+  }
+
+  .u-section-2 .u-list-1 {
+    width: 340px;
   }
 
   .u-section-2 .u-repeater-1 {
