@@ -10,6 +10,7 @@
   animation-duration: 3000ms;
   width: 538px;
   font-size: 3.75rem;
+  font-family: Oswald, sans-serif;
   margin: 60px auto 0;
 }
 
@@ -28,7 +29,7 @@
   }
 
   .u-section-1 .u-text-1 {
-    font-family: Oswald, sans-serif;
+    font-family: "Advent Pro";
   }
 
   .u-section-1 .u-text-2 {
@@ -252,6 +253,22 @@
 }
 
 @media (max-width: 767px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 1161px;
+  }
+
+  .u-section-2 .u-text-1 {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-2 .u-text-2 {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .u-section-2 .u-container-layout-1 {
     padding-left: 20px;
     padding-right: 20px;
@@ -284,6 +301,10 @@
 }
 
 @media (max-width: 575px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 2039px;
+  }
+
   .u-section-2 .u-text-1 {
     font-size: 1.5rem;
   }
