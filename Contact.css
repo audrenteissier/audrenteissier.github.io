@@ -3,8 +3,9 @@
 }
 
 .u-section-1 .u-form-1 {
+  height: 338px;
   width: 570px;
-  margin: 190px auto 39px;
+  margin: 189px auto 40px;
 }
 
 @media (max-width: 767px) {
