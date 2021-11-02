@@ -72,6 +72,9 @@ body { font-family : 'Neuton'; }
 
 #czr-push-footer { display: none; visibility: hidden; }
         .czr-sticky-footer #czr-push-footer.sticky-footer-enabled { display: block; }</style>
+<link rel="stylesheet" id="bar_styles-css" href="./../wp-content/plugins/skt-skill-bar/skill_bar/bar/sbar.css?ver=5.8.1" media="all">
+<link rel="stylesheet" id="circle_styles-css" href="./../wp-content/plugins/skt-skill-bar/skill_bar/circle/jquery.easy-pie-chart.css?ver=5.8.1" media="all">
+<link rel="stylesheet" id="skt_verticleline_css-css" href="./../wp-content/plugins/skt-skill-bar/skill_bar/css/custom.css?ver=5.8.1" media="all">
 <script src="./../wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
 <script src="./../wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <script src="./../wp-content/plugins/wen-skill-charts/public/js/jquery.appear.js?ver=1.5.2" id="wen-skill-charts-appear-js"></script>
@@ -80,9 +83,10 @@ body { font-family : 'Neuton'; }
 <script src="./../wp-content/themes/customizr/assets/front/js/libs/modernizr.min.js?ver=4.4.18" id="modernizr-js"></script>
 <script src="./../wp-includes/js/underscore.min.js?ver=1.13.1" id="underscore-js"></script>
 <script id="tc-scripts-js-extra">
-var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/","mainScriptUrl":".\/wp-content\/themes\/customizr\/assets\/front\/js\/tc-scripts.min.js?4.4.18","deferFontAwesome":"1","fontAwesomeUrl":".\/wp-content\/themes\/customizr\/assets\/shared\/fonts\/fa\/css\/fontawesome-all.min.css?4.4.18","_disabled":[],"centerSliderImg":"1","isLightBoxEnabled":"1","SmoothScroll":{"Enabled":true,"Options":{"touchpadSupport":false}},"isAnchorScrollEnabled":"1","anchorSmoothScrollExclude":{"simple":["[class*=edd]",".carousel-control","[data-toggle=\"modal\"]","[data-toggle=\"dropdown\"]","[data-toggle=\"czr-dropdown\"]","[data-toggle=\"tooltip\"]","[data-toggle=\"popover\"]","[data-toggle=\"collapse\"]","[data-toggle=\"czr-collapse\"]","[data-toggle=\"tab\"]","[data-toggle=\"pill\"]","[data-toggle=\"czr-pill\"]","[class*=upme]","[class*=um-]"],"deep":{"classes":[],"ids":[]}},"timerOnScrollAllBrowsers":"1","centerAllImg":"1","HasComments":"","LoadModernizr":"1","stickyHeader":"","extLinksStyle":"","extLinksTargetExt":"","extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"dropcapEnabled":"","dropcapWhere":{"post":"","page":""},"dropcapMinWords":"","dropcapSkipSelectors":{"tags":["IMG","IFRAME","H1","H2","H3","H4","H5","H6","BLOCKQUOTE","UL","OL"],"classes":["btn"],"id":[]},"imgSmartLoadEnabled":"","imgSmartLoadOpts":{"parentSelectors":["[class*=grid-container], .article-container",".__before_main_wrapper",".widget-front",".post-related-articles",".tc-singular-thumbnail-wrapper",".sek-module-inner"],"opts":{"excludeImg":[".tc-holder-img"]}},"imgSmartLoadsForSliders":"1","pluginCompats":[],"isWPMobile":"","menuStickyUserSettings":{"desktop":"stick_up","mobile":"stick_up"},"adminAjaxUrl":".\/wp-admin\/admin-ajax.php","ajaxUrl":".\/?czrajax=1","frontNonce":{"id":"CZRFrontNonce","handle":"455e9c90d6"},"isDevMode":"","isModernStyle":"1","i18n":{"Permanently dismiss":"Fermer définitivement"},"frontNotifications":{"welcome":{"enabled":false,"content":"","dismissAction":"dismiss_welcome_note_front"}},"preloadGfonts":"1","googleFonts":"Neuton","version":"4.4.18"};
+var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/","mainScriptUrl":".\/wp-content\/themes\/customizr\/assets\/front\/js\/tc-scripts.min.js?4.4.18","deferFontAwesome":"1","fontAwesomeUrl":".\/wp-content\/themes\/customizr\/assets\/shared\/fonts\/fa\/css\/fontawesome-all.min.css?4.4.18","_disabled":[],"centerSliderImg":"1","isLightBoxEnabled":"1","SmoothScroll":{"Enabled":true,"Options":{"touchpadSupport":false}},"isAnchorScrollEnabled":"1","anchorSmoothScrollExclude":{"simple":["[class*=edd]",".carousel-control","[data-toggle=\"modal\"]","[data-toggle=\"dropdown\"]","[data-toggle=\"czr-dropdown\"]","[data-toggle=\"tooltip\"]","[data-toggle=\"popover\"]","[data-toggle=\"collapse\"]","[data-toggle=\"czr-collapse\"]","[data-toggle=\"tab\"]","[data-toggle=\"pill\"]","[data-toggle=\"czr-pill\"]","[class*=upme]","[class*=um-]"],"deep":{"classes":[],"ids":[]}},"timerOnScrollAllBrowsers":"1","centerAllImg":"1","HasComments":"","LoadModernizr":"1","stickyHeader":"","extLinksStyle":"","extLinksTargetExt":"","extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"dropcapEnabled":"","dropcapWhere":{"post":"","page":""},"dropcapMinWords":"","dropcapSkipSelectors":{"tags":["IMG","IFRAME","H1","H2","H3","H4","H5","H6","BLOCKQUOTE","UL","OL"],"classes":["btn"],"id":[]},"imgSmartLoadEnabled":"","imgSmartLoadOpts":{"parentSelectors":["[class*=grid-container], .article-container",".__before_main_wrapper",".widget-front",".post-related-articles",".tc-singular-thumbnail-wrapper",".sek-module-inner"],"opts":{"excludeImg":[".tc-holder-img"]}},"imgSmartLoadsForSliders":"1","pluginCompats":[],"isWPMobile":"","menuStickyUserSettings":{"desktop":"stick_up","mobile":"stick_up"},"adminAjaxUrl":".\/wp-admin\/admin-ajax.php","ajaxUrl":".\/?czrajax=1","frontNonce":{"id":"CZRFrontNonce","handle":"742617c085"},"isDevMode":"","isModernStyle":"1","i18n":{"Permanently dismiss":"Fermer définitivement"},"frontNotifications":{"welcome":{"enabled":false,"content":"","dismissAction":"dismiss_welcome_note_front"}},"preloadGfonts":"1","googleFonts":"Neuton","version":"4.4.18"};
 </script>
 <script src="./../wp-content/themes/customizr/assets/front/js/tc-scripts.min.js?ver=4.4.18" id="tc-scripts-js" defer></script>
+<script src="./../wp-content/plugins/skt-skill-bar/skill_bar/bar/jquery.appear.js?ver=5.8.1" id="bar_script-js"></script>
 <link rel="https://api.w.org/" href="./../wp-json/index.html">
 <link rel="alternate" type="application/json" href="./../wp-json/wp/v2/pages/212/index.html">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../xmlrpc.php?rsd">
@@ -150,7 +154,7 @@ var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/
     
     <div id="tc-page-wrap" class="container czr-boxed">
 
-      <header class="tpnav-header__header tc-header logo_centered czr-submenu-fade czr-submenu-move czr-highlight-contextual-menu-items">
+      <header class="tpnav-header__header tc-header logo_centered sticky-brand-shrink-on czr-submenu-fade czr-submenu-move czr-highlight-contextual-menu-items">
     <div class="topbar-navbar__wrapper d-none d-lg-block">
   <div class="container">
         <div class="row flex-row flex-lg-nowrap justify-content-start justify-content-lg-end align-items-center topbar-navbar__row">
@@ -227,9 +231,9 @@ var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/
       <div class="czr-search-expand-inner"><div class="search-form__container ">
   <form action="./" method="get" class="czr-form search-form">
     <div class="form-group czr-focus">
-            <label for="s-618058aeea679" id="lsearch-618058aeea679">
+            <label for="s-6181259cca565" id="lsearch-6181259cca565">
         <span class="screen-reader-text">Rechercher</span>
-        <input id="s-618058aeea679" class="form-control czr-search-field" name="s" type="search" value="" aria-describedby="lsearch-618058aeea679" placeholder="Rechercher &hellip;">
+        <input id="s-6181259cca565" class="form-control czr-search-field" name="s" type="search" value="" aria-describedby="lsearch-6181259cca565" placeholder="Rechercher &hellip;">
       </label>
       <button type="submit" class="button"><i class="icn-search"></i><span class="screen-reader-text">Rechercher &hellip;</span></button>
     </div>
@@ -241,9 +245,9 @@ var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/
   <div class="search-form__container ">
   <form action="./" method="get" class="czr-form search-form">
     <div class="form-group czr-focus">
-            <label for="s-618058aeea98c" id="lsearch-618058aeea98c">
+            <label for="s-6181259cca927" id="lsearch-6181259cca927">
         <span class="screen-reader-text">Rechercher</span>
-        <input id="s-618058aeea98c" class="form-control czr-search-field" name="s" type="search" value="" aria-describedby="lsearch-618058aeea98c" placeholder="Rechercher &hellip;">
+        <input id="s-6181259cca927" class="form-control czr-search-field" name="s" type="search" value="" aria-describedby="lsearch-6181259cca927" placeholder="Rechercher &hellip;">
       </label>
       <button type="submit" class="button"><i class="icn-search"></i><span class="screen-reader-text">Rechercher &hellip;</span></button>
     </div>
@@ -323,58 +327,55 @@ var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/
 <p>Since I was young, I allways felt a particular attraction towards  English language. After a trip to London, where I could barly speak to people, I started seriously learn English on my own. The way English was taught in school was not making it easy for me to get better. I started watching tv shows in English with French subtitles, I paid more attention to the lyrics of the songs I was listening to, checking words in the dictionary and little by little I progressed to be more and more capable of understanding both spoken and written English. After years of progress I realised that I would no be able to have a proper conversation in English because I had no practice, I was incapable of speaking. Since I wasn&rsquo;t in a position that allowed me to travel to another country to practice, I decided to play onlines games on my computer. Since I allways liked video games, I was the perfect way for me to speak english with other players while staying at home. I played « The division », « Fortnite » and « Apex legends ». While It was difficult at first, the progress I have made has been tremendous. I wish I will have soon the opportunity to use my english in the real world during a trip or in futur professional activities.</p>
 
 
-         
-              <div class="wen-skill-charts-wrap">
-          
-    <div class="wen-skill-circle" id="wsc-483-618058aeecedb">
-                      <div class="skill-wrap">
-                              <div class="skill-circle-wrap" data-percent="100" data-barcolor="#dd6161">
-                      </div>
-                    <div class="skill-title">Listening</div>
-                    
-        </div>
-                      <div class="skill-wrap">
-                              <div class="skill-circle-wrap" data-percent="95" data-barcolor="#dd6161">
-                      </div>
-                    <div class="skill-title">Reading/writing</div>
-                    
-        </div>
-                      <div class="skill-wrap">
-                              <div class="skill-circle-wrap" data-percent="85" data-barcolor="#dd6161">
-                      </div>
-                    <div class="skill-title">Speaking</div>
-                    
-        </div>
-          </div>
-<!-- .wen-skill-bar -->
-    <script>
-      jQuery(document).ready(function($){
-        $('#wsc-483-618058aeecedb').appear();
-        $(document.body).on('appear', '#wsc-483-618058aeecedb', function(e, affected) {
-          $( '.skill-circle-wrap', '#wsc-483-618058aeecedb' ).each(function(i, elem ){
-            $(this).easyPieChart({
-              easing: 'easeOutBounce',
-              lineWidth: '40',
-              animate: 1500,
-              scaleColor: false,
-              trackWidth:'40',
-              size: '200',
-              lineCap: 'Square',
-              trackColor: '#605d5d',
-              barColor: $(this).data('barcolor'),
-              onStep: function(from, to, percent) {
-                $(this.el).find('.skill-percentage').text(Math.round(percent));
-              },
-              onStart: function(from, to) {
-                $(this.el).find('.skill-percentage').fadeIn();
-              }
-            });
-          });
-        }); //end appear
-      });
-    </script>
-            </div> <!-- .wsc-skill -->
-         
+
+<div class="vertical-page">
+					<article class="cvpage " id="resume">
+						<div class="charts clearfix">
+							<div>
+								<ul class="car hideme">
+    <li>
+				<div class="chartbox">
+					<div class="chart" data-percent="100">
+						<span>100%</span>
+					</div>
+					<p>Listening</p>
+				</div>
+			</li>
+    <li>
+				<div class="chartbox">
+					<div class="chart" data-percent="90">
+						<span>90%</span>
+					</div>
+					<p>Reading/writing</p>
+				</div>
+			</li>
+    <li>
+				<div class="chartbox">
+					<div class="chart" data-percent="85">
+						<span>85%</span>
+					</div>
+					<p>Speaking</p>
+				</div>
+			</li>
+  
+</ul>
+								<div style="clear:both"></div>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div style="clear:both; height:10px; overflow:hidden;"></div>
+				<style type="text/css">.chart{color:#605d5d; margin-bottom:5px;font-size:16px;}
+				.chartbox p{color:#dd6161;font-size:19px;} 
+				.car, .skills ul{text-align:center;}</style>
+				<script type="text/javascript">
+				jQuery(".chartbox p").each( function(){
+					if( jQuery(this).html() == "" ){
+						jQuery(this).remove();
+					}
+				});
+				var pixflow_js_opt = {"pie_chart_color":"#dd6161","pie_track_color":"#605d5d","pie_chart_size":"180"};
+				</script>
 
 
 
@@ -447,6 +448,10 @@ var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/
 <script src="./../wp-includes/js/comment-reply.min.js?ver=5.8.1" id="comment-reply-js"></script>
 <script src="./../wp-includes/js/jquery/ui/core.min.js?ver=1.12.1" id="jquery-ui-core-js"></script>
 <script src="./../wp-includes/js/jquery/ui/effect.min.js?ver=1.12.1" id="jquery-effects-core-js"></script>
+<script src="./../wp-content/plugins/skt-skill-bar/skill_bar/circle/jquery.easy-pie-chart.js?ver=1.7" id="circle_script-js"></script>
+<script src="./../wp-content/plugins/skt-skill-bar/skill_bar/circle/custom.js?ver=1.7" id="circle_custom_script-js"></script>
+<script src="./../wp-content/plugins/skt-skill-bar/skill_bar/gage/justgage.js?ver=1.7" id="gage_script-js"></script>
+<script src="./../wp-content/plugins/skt-skill-bar/skill_bar/gage/raphael-2.1.4.min.js?ver=1.7" id="gage_raphael_script-js"></script>
 <script src="./../wp-includes/js/wp-embed.min.js?ver=5.8.1" id="wp-embed-js"></script>
   </body>
   </html>

@@ -60,6 +60,9 @@ body { font-family : 'Neuton'; }
         }
 #czr-push-footer { display: none; visibility: hidden; }
         .czr-sticky-footer #czr-push-footer.sticky-footer-enabled { display: block; }</style>
+<link rel="stylesheet" id="bar_styles-css" href="./wp-content/plugins/skt-skill-bar/skill_bar/bar/sbar.css?ver=5.8.1" media="all">
+<link rel="stylesheet" id="circle_styles-css" href="./wp-content/plugins/skt-skill-bar/skill_bar/circle/jquery.easy-pie-chart.css?ver=5.8.1" media="all">
+<link rel="stylesheet" id="skt_verticleline_css-css" href="./wp-content/plugins/skt-skill-bar/skill_bar/css/custom.css?ver=5.8.1" media="all">
 <script src="./wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
 <script src="./wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <script src="./wp-content/plugins/wen-skill-charts/public/js/jquery.appear.js?ver=1.5.2" id="wen-skill-charts-appear-js"></script>
@@ -68,9 +71,10 @@ body { font-family : 'Neuton'; }
 <script src="./wp-content/themes/customizr/assets/front/js/libs/modernizr.min.js?ver=4.4.18" id="modernizr-js"></script>
 <script src="./wp-includes/js/underscore.min.js?ver=1.13.1" id="underscore-js"></script>
 <script id="tc-scripts-js-extra">
-var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/","mainScriptUrl":".\/wp-content\/themes\/customizr\/assets\/front\/js\/tc-scripts.min.js?4.4.18","deferFontAwesome":"1","fontAwesomeUrl":".\/wp-content\/themes\/customizr\/assets\/shared\/fonts\/fa\/css\/fontawesome-all.min.css?4.4.18","_disabled":[],"centerSliderImg":"1","isLightBoxEnabled":"1","SmoothScroll":{"Enabled":true,"Options":{"touchpadSupport":false}},"isAnchorScrollEnabled":"1","anchorSmoothScrollExclude":{"simple":["[class*=edd]",".carousel-control","[data-toggle=\"modal\"]","[data-toggle=\"dropdown\"]","[data-toggle=\"czr-dropdown\"]","[data-toggle=\"tooltip\"]","[data-toggle=\"popover\"]","[data-toggle=\"collapse\"]","[data-toggle=\"czr-collapse\"]","[data-toggle=\"tab\"]","[data-toggle=\"pill\"]","[data-toggle=\"czr-pill\"]","[class*=upme]","[class*=um-]"],"deep":{"classes":[],"ids":[]}},"timerOnScrollAllBrowsers":"1","centerAllImg":"1","HasComments":"","LoadModernizr":"1","stickyHeader":"","extLinksStyle":"","extLinksTargetExt":"","extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"dropcapEnabled":"","dropcapWhere":{"post":"","page":""},"dropcapMinWords":"","dropcapSkipSelectors":{"tags":["IMG","IFRAME","H1","H2","H3","H4","H5","H6","BLOCKQUOTE","UL","OL"],"classes":["btn"],"id":[]},"imgSmartLoadEnabled":"","imgSmartLoadOpts":{"parentSelectors":["[class*=grid-container], .article-container",".__before_main_wrapper",".widget-front",".post-related-articles",".tc-singular-thumbnail-wrapper",".sek-module-inner"],"opts":{"excludeImg":[".tc-holder-img"]}},"imgSmartLoadsForSliders":"1","pluginCompats":[],"isWPMobile":"","menuStickyUserSettings":{"desktop":"stick_up","mobile":"stick_up"},"adminAjaxUrl":".\/wp-admin\/admin-ajax.php","ajaxUrl":".\/?czrajax=1","frontNonce":{"id":"CZRFrontNonce","handle":"455e9c90d6"},"isDevMode":"","isModernStyle":"1","i18n":{"Permanently dismiss":"Fermer définitivement"},"frontNotifications":{"welcome":{"enabled":false,"content":"","dismissAction":"dismiss_welcome_note_front"}},"preloadGfonts":"1","googleFonts":"Neuton","version":"4.4.18"};
+var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/","mainScriptUrl":".\/wp-content\/themes\/customizr\/assets\/front\/js\/tc-scripts.min.js?4.4.18","deferFontAwesome":"1","fontAwesomeUrl":".\/wp-content\/themes\/customizr\/assets\/shared\/fonts\/fa\/css\/fontawesome-all.min.css?4.4.18","_disabled":[],"centerSliderImg":"1","isLightBoxEnabled":"1","SmoothScroll":{"Enabled":true,"Options":{"touchpadSupport":false}},"isAnchorScrollEnabled":"1","anchorSmoothScrollExclude":{"simple":["[class*=edd]",".carousel-control","[data-toggle=\"modal\"]","[data-toggle=\"dropdown\"]","[data-toggle=\"czr-dropdown\"]","[data-toggle=\"tooltip\"]","[data-toggle=\"popover\"]","[data-toggle=\"collapse\"]","[data-toggle=\"czr-collapse\"]","[data-toggle=\"tab\"]","[data-toggle=\"pill\"]","[data-toggle=\"czr-pill\"]","[class*=upme]","[class*=um-]"],"deep":{"classes":[],"ids":[]}},"timerOnScrollAllBrowsers":"1","centerAllImg":"1","HasComments":"","LoadModernizr":"1","stickyHeader":"","extLinksStyle":"","extLinksTargetExt":"","extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"dropcapEnabled":"","dropcapWhere":{"post":"","page":""},"dropcapMinWords":"","dropcapSkipSelectors":{"tags":["IMG","IFRAME","H1","H2","H3","H4","H5","H6","BLOCKQUOTE","UL","OL"],"classes":["btn"],"id":[]},"imgSmartLoadEnabled":"","imgSmartLoadOpts":{"parentSelectors":["[class*=grid-container], .article-container",".__before_main_wrapper",".widget-front",".post-related-articles",".tc-singular-thumbnail-wrapper",".sek-module-inner"],"opts":{"excludeImg":[".tc-holder-img"]}},"imgSmartLoadsForSliders":"1","pluginCompats":[],"isWPMobile":"","menuStickyUserSettings":{"desktop":"stick_up","mobile":"stick_up"},"adminAjaxUrl":".\/wp-admin\/admin-ajax.php","ajaxUrl":".\/?czrajax=1","frontNonce":{"id":"CZRFrontNonce","handle":"742617c085"},"isDevMode":"","isModernStyle":"1","i18n":{"Permanently dismiss":"Fermer définitivement"},"frontNotifications":{"welcome":{"enabled":false,"content":"","dismissAction":"dismiss_welcome_note_front"}},"preloadGfonts":"1","googleFonts":"Neuton","version":"4.4.18"};
 </script>
 <script src="./wp-content/themes/customizr/assets/front/js/tc-scripts.min.js?ver=4.4.18" id="tc-scripts-js" defer></script>
+<script src="./wp-content/plugins/skt-skill-bar/skill_bar/bar/jquery.appear.js?ver=5.8.1" id="bar_script-js"></script>
 <link rel="https://api.w.org/" href="./wp-json/index.html">
 <link rel="alternate" type="application/json" href="./wp-json/wp/v2/pages/71/index.html">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="./xmlrpc.php?rsd">
@@ -138,7 +142,7 @@ var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/
     
     <div id="tc-page-wrap" class="container czr-boxed">
 
-      <header class="tpnav-header__header tc-header logo_centered czr-submenu-fade czr-submenu-move czr-highlight-contextual-menu-items">
+      <header class="tpnav-header__header tc-header logo_centered sticky-brand-shrink-on czr-submenu-fade czr-submenu-move czr-highlight-contextual-menu-items">
     <div class="topbar-navbar__wrapper d-none d-lg-block">
   <div class="container">
         <div class="row flex-row flex-lg-nowrap justify-content-start justify-content-lg-end align-items-center topbar-navbar__row">
@@ -215,9 +219,9 @@ var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/
       <div class="czr-search-expand-inner"><div class="search-form__container ">
   <form action="./" method="get" class="czr-form search-form">
     <div class="form-group czr-focus">
-            <label for="s-618058ad6d432" id="lsearch-618058ad6d432">
+            <label for="s-6181259b5ac0f" id="lsearch-6181259b5ac0f">
         <span class="screen-reader-text">Rechercher</span>
-        <input id="s-618058ad6d432" class="form-control czr-search-field" name="s" type="search" value="" aria-describedby="lsearch-618058ad6d432" placeholder="Rechercher &hellip;">
+        <input id="s-6181259b5ac0f" class="form-control czr-search-field" name="s" type="search" value="" aria-describedby="lsearch-6181259b5ac0f" placeholder="Rechercher &hellip;">
       </label>
       <button type="submit" class="button"><i class="icn-search"></i><span class="screen-reader-text">Rechercher &hellip;</span></button>
     </div>
@@ -229,9 +233,9 @@ var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/
   <div class="search-form__container ">
   <form action="./" method="get" class="czr-form search-form">
     <div class="form-group czr-focus">
-            <label for="s-618058ad6d75f" id="lsearch-618058ad6d75f">
+            <label for="s-6181259b5afd8" id="lsearch-6181259b5afd8">
         <span class="screen-reader-text">Rechercher</span>
-        <input id="s-618058ad6d75f" class="form-control czr-search-field" name="s" type="search" value="" aria-describedby="lsearch-618058ad6d75f" placeholder="Rechercher &hellip;">
+        <input id="s-6181259b5afd8" class="form-control czr-search-field" name="s" type="search" value="" aria-describedby="lsearch-6181259b5afd8" placeholder="Rechercher &hellip;">
       </label>
       <button type="submit" class="button"><i class="icn-search"></i><span class="screen-reader-text">Rechercher &hellip;</span></button>
     </div>
@@ -301,6 +305,18 @@ var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/
 
 
 
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<div class="wp-block-columns">
+<div class="wp-block-column" style="flex-basis:100%">
+<div class="wp-block-stevehenty-drop-shadow-box dropshadowboxes-container dropshadowboxes-center" style="width:100%"><div class="dropshadowboxes-drop-shadow dropshadowboxes-lifted-both dropshadowboxes-rounded-corners dropshadowboxes-inside-and-outside-shadow" style="background-color:#FFFFFF;border-style:solid;border-width:0;border-color:#DDDDDD;width:auto;padding:10px"><div>
+<p class="has-text-align-center"><em>En cours&#8230;</em></p>
+</div></div></div>
+</div>
+</div>
+</div></div>
+
+
+
 <p class="has-text-align-center has-large-font-size"><strong>Présentation</strong></p>
 
 
@@ -316,11 +332,15 @@ var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/
 <div class="wp-block-columns">
 <div class="wp-block-column" style="flex-basis:33.34%">
 <div class="wp-block-stevehenty-drop-shadow-box dropshadowboxes-container" style="width:auto"><div class="dropshadowboxes-drop-shadow dropshadowboxes-lifted-both dropshadowboxes-rounded-corners dropshadowboxes-inside-and-outside-shadow" style="background-color:#FFFFFF;border-style:solid;border-width:0;border-color:#DDDDDD;width:;padding:10px"><div>
-<figure class="wp-block-image size-full"><img loading="lazy" width="512" height="512" src="./wp-content/uploads/2021/10/university.png" alt="" class="wp-image-658" srcset="./wp-content/uploads/2021/10/university.png 512w, ./wp-content/uploads/2021/10/university-300x300.png 300w, ./wp-content/uploads/2021/10/university-150x150.png 150w, ./wp-content/uploads/2021/10/university-510x510.png 510w" sizes="(max-width: 512px) 100vw, 512px"></figure>
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
-<p class="has-text-align-center"><strong>Niveau D.UT. Génie Electrique et Informatique Industrielle</strong></p>
+<div class="wp-block-image"><figure class="aligncenter size-full is-resized"><img loading="lazy" src="./wp-content/uploads/2021/10/university.png" alt="" class="wp-image-658" width="200" height="200" srcset="./wp-content/uploads/2021/10/university.png 512w, ./wp-content/uploads/2021/10/university-300x300.png 300w, ./wp-content/uploads/2021/10/university-150x150.png 150w, ./wp-content/uploads/2021/10/university-510x510.png 510w" sizes="(max-width: 200px) 100vw, 200px"></figure></div>
+
+
+
+<p class="has-text-align-center has-normal-font-size"><strong>Niveau D.UT. Génie Electrique et Informatique Industrielle (60 ECTS)</strong></p>
 
 
 
@@ -328,7 +348,11 @@ var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/
 
 
 
-<p class="has-text-align-center">Université Lyon 1</p>
+<p class="has-text-align-center has-normal-font-size"><em>Université Lyon 1, Villeurbanne</em></p>
+
+
+
+<div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
 </div></div></div>
 </div>
 
@@ -336,7 +360,11 @@ var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/
 
 <div class="wp-block-column is-vertically-aligned-top" style="flex-basis:33.34%">
 <div class="wp-block-stevehenty-drop-shadow-box dropshadowboxes-container" style="width:auto"><div class="dropshadowboxes-drop-shadow dropshadowboxes-lifted-both dropshadowboxes-rounded-corners dropshadowboxes-inside-and-outside-shadow" style="background-color:#FFFFFF;border-style:solid;border-width:0;border-color:#DDDDDD;width:;padding:10px"><div>
-<figure class="wp-block-image size-full is-resized"><img loading="lazy" src="./wp-content/uploads/2021/10/graduated.png" alt="" class="wp-image-659" width="382" height="382" srcset="./wp-content/uploads/2021/10/graduated.png 512w, ./wp-content/uploads/2021/10/graduated-300x300.png 300w, ./wp-content/uploads/2021/10/graduated-150x150.png 150w, ./wp-content/uploads/2021/10/graduated-510x510.png 510w" sizes="(max-width: 382px) 100vw, 382px"></figure>
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full is-resized"><img loading="lazy" src="./wp-content/uploads/2021/10/graduated.png" alt="" class="wp-image-659" width="200" height="200" srcset="./wp-content/uploads/2021/10/graduated.png 512w, ./wp-content/uploads/2021/10/graduated-300x300.png 300w, ./wp-content/uploads/2021/10/graduated-150x150.png 150w, ./wp-content/uploads/2021/10/graduated-510x510.png 510w" sizes="(max-width: 200px) 100vw, 200px"></figure></div>
 
 
 
@@ -348,7 +376,11 @@ var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/
 
 
 
-<p class="has-text-align-center">Lycée Edouard Branly, Lyon 5ème</p>
+<p class="has-text-align-center has-normal-font-size"><em>Lycée Edouard Branly, Lyon 5ème</em></p>
+
+
+
+<div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
 </div></div></div>
 </div>
 
@@ -356,7 +388,11 @@ var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/
 
 <div class="wp-block-column is-vertically-aligned-top" style="flex-basis:33.33%">
 <div class="wp-block-stevehenty-drop-shadow-box dropshadowboxes-container" style="width:auto"><div class="dropshadowboxes-drop-shadow dropshadowboxes-lifted-both dropshadowboxes-rounded-corners dropshadowboxes-inside-and-outside-shadow" style="background-color:#FFFFFF;border-style:solid;border-width:0;border-color:#DDDDDD;width:;padding:10px"><div>
-<figure class="wp-block-image size-full is-style-default"><img loading="lazy" width="512" height="512" src="./wp-content/uploads/2021/10/france.png" alt="" class="wp-image-660" srcset="./wp-content/uploads/2021/10/france.png 512w, ./wp-content/uploads/2021/10/france-300x300.png 300w, ./wp-content/uploads/2021/10/france-150x150.png 150w, ./wp-content/uploads/2021/10/france-510x510.png 510w" sizes="(max-width: 512px) 100vw, 512px"></figure>
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-image is-style-default"><figure class="aligncenter size-full is-resized"><img loading="lazy" src="./wp-content/uploads/2021/10/france.png" alt="" class="wp-image-660" width="200" height="200" srcset="./wp-content/uploads/2021/10/france.png 512w, ./wp-content/uploads/2021/10/france-300x300.png 300w, ./wp-content/uploads/2021/10/france-150x150.png 150w, ./wp-content/uploads/2021/10/france-510x510.png 510w" sizes="(max-width: 200px) 100vw, 200px"></figure></div>
 
 
 
@@ -368,14 +404,18 @@ var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/
 
 
 
-<p class="has-text-align-center">Né à Vénissieux</p>
+<p class="has-text-align-center has-normal-font-size"><em>Né à Vénissieux</em></p>
+
+
+
+<div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
 </div></div></div>
 </div>
 </div>
 
 
 
-<div style="height:60px" aria-hidden="true" class="wp-block-spacer"></div>
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
@@ -383,11 +423,15 @@ var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/
 
 
 
-<p class="has-text-align-center">Dernière version&nbsp;</p>
+<p class="has-text-align-center">Dernière version</p>
 
 
 
-<div style="text-align:center" class="wp-block-atomic-blocks-ab-button ab-block-button"><a href="./cv/index.html" class="ab-button ab-button-shape-circular ab-button-size-large" style="color:#ffffff;background-color:#cf2e2e">Téléchargement CV</a></div>
+<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div style="text-align:center" class="wp-block-atomic-blocks-ab-button ab-block-button"><a href="https://audrenteissier.github.io/CV.docx" class="ab-button ab-button-shape-rounded ab-button-size-large" style="color:#ffffff;background-color:#cf2e2e">Téléchargement CV</a></div>
 
 
 
@@ -450,6 +494,10 @@ var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/
 <script src="./wp-includes/js/comment-reply.min.js?ver=5.8.1" id="comment-reply-js"></script>
 <script src="./wp-includes/js/jquery/ui/core.min.js?ver=1.12.1" id="jquery-ui-core-js"></script>
 <script src="./wp-includes/js/jquery/ui/effect.min.js?ver=1.12.1" id="jquery-effects-core-js"></script>
+<script src="./wp-content/plugins/skt-skill-bar/skill_bar/circle/jquery.easy-pie-chart.js?ver=1.7" id="circle_script-js"></script>
+<script src="./wp-content/plugins/skt-skill-bar/skill_bar/circle/custom.js?ver=1.7" id="circle_custom_script-js"></script>
+<script src="./wp-content/plugins/skt-skill-bar/skill_bar/gage/justgage.js?ver=1.7" id="gage_script-js"></script>
+<script src="./wp-content/plugins/skt-skill-bar/skill_bar/gage/raphael-2.1.4.min.js?ver=1.7" id="gage_raphael_script-js"></script>
 <script src="./wp-includes/js/wp-embed.min.js?ver=5.8.1" id="wp-embed-js"></script>
   </body>
   </html>
