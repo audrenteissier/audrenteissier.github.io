@@ -1,95 +1,68 @@
 <!DOCTYPE html>
-<!--[if IE 7]>
-<html class="ie ie7" lang="fr-FR">
-<![endif]--><!--[if IE 8]>
-<html class="ie ie8" lang="fr-FR">
-<![endif]--><!--[if !(IE 7) | !(IE 8)  ]><!--><html lang="fr-FR" class="no-js">
-<!--<![endif]-->
-  <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="profile" href="https://gmpg.org/xfn/11">
-  <link rel="pingback" href="./../xmlrpc.php">
-<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
-<title>Domoticz sur Raspberry Pi &#8211; Audren Teissier</title>
+<html class="html" lang="fr-FR">
+<head>
+	<meta charset="UTF-8">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<title>Domoticz sur Raspberry Pi &#8211; Audren Teissier</title>
 <meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//s.w.org">
 <link rel="alternate" type="application/rss+xml" title="Audren Teissier &raquo; Flux" href="./../feed/index.html">
 <link rel="alternate" type="application/rss+xml" title="Audren Teissier &raquo; Flux des commentaires" href="./../comments/feed/index.html">
-		<script>
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":".\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2"}};
-			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style>img.wp-smiley,
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":".\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.9"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style>img.wp-smiley,
 img.emoji {
 	display: inline !important;
 	border: none !important;
 	box-shadow: none !important;
 	height: 1em !important;
 	width: 1em !important;
-	margin: 0 .07em !important;
+	margin: 0 0.07em !important;
 	vertical-align: -0.1em !important;
 	background: none !important;
 	padding: 0 !important;
 }</style>
 	<link rel="stylesheet" id="atomic-blocks-fontawesome-css" href="./../wp-content/plugins/atomic-blocks/dist/assets/fontawesome/css/all.min.css?ver=1635792235" media="all">
-<link rel="stylesheet" id="dashicons-css" href="./../wp-includes/css/dashicons.min.css?ver=5.8.2" media="all">
-<link rel="stylesheet" id="menu-icons-extra-css" href="./../wp-content/plugins/menu-icons/css/extra.min.css?ver=0.12.9" media="all">
-<link rel="stylesheet" id="wp-block-library-css" href="./../wp-includes/css/dist/block-library/style.min.css?ver=5.8.2" media="all">
-<link rel="stylesheet" id="gutenberg-card-block-style-css" href="./../wp-content/plugins/card-block/css/blocks.style.build.css?ver=5.8.2" media="all">
+<link rel="stylesheet" id="dashicons-css" href="./../wp-includes/css/dashicons.min.css?ver=5.9" media="all">
+<link rel="stylesheet" id="menu-icons-extra-css" href="./../wp-content/plugins/menu-icons/css/extra.min.css?ver=0.12.10" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="./../wp-includes/css/dist/block-library/style.min.css?ver=5.9" media="all">
+<style id="wp-block-library-theme-inline-css">.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-code>code{font-family:Menlo,Consolas,monaco,monospace;color:#1e1e1e;padding:.8em 1em;border:1px solid #ddd;border-radius:4px}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-group:where(.has-background){padding:1.25em 2.375em}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto;opacity:.4}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}</style>
+<link rel="stylesheet" id="gutenberg-card-block-style-css" href="./../wp-content/plugins/card-block/css/blocks.style.build.css?ver=5.9" media="all">
 <link rel="stylesheet" id="atomic-blocks-style-css-css" href="./../wp-content/plugins/atomic-blocks/dist/blocks.style.build.css?ver=1635792235" media="all">
-<link rel="stylesheet" id="wp-components-css" href="./../wp-includes/css/dist/components/style.min.css?ver=5.8.2" media="all">
-<link rel="stylesheet" id="wp-block-editor-css" href="./../wp-includes/css/dist/block-editor/style.min.css?ver=5.8.2" media="all">
-<link rel="stylesheet" id="wp-nux-css" href="./../wp-includes/css/dist/nux/style.min.css?ver=5.8.2" media="all">
-<link rel="stylesheet" id="wp-reusable-blocks-css" href="./../wp-includes/css/dist/reusable-blocks/style.min.css?ver=5.8.2" media="all">
-<link rel="stylesheet" id="wp-editor-css" href="./../wp-includes/css/dist/editor/style.min.css?ver=5.8.2" media="all">
-<link rel="stylesheet" id="gutenberg_animated_blocks-cgb-style-css-css" href="./../wp-content/plugins/animated-blocks/dist/blocks.style.build.css?ver=5.8.2" media="all">
-<link rel="stylesheet" id="gutenberg_animated_blocks-style-css" href="./../wp-content/plugins/animated-blocks/dist/assets/css/animate.min.css?ver=5.8.2" media="all">
-<link rel="stylesheet" id="drop_shadow_block-style-css-css" href="./../wp-content/plugins/drop-shadow-boxes/block/blocks.style.build.css?ver=1.7.3" media="all">
-<link rel="stylesheet" id="customizr-main-css" href="./../wp-content/themes/customizr/assets/front/css/style.min.css?ver=4.4.18" media="all">
-<style id="customizr-main-inline-css">::-moz-selection{background-color:#efacac}::selection{background-color:#efacac}a,.btn-skin:active,.btn-skin:focus,.btn-skin:hover,.btn-skin.inverted,.grid-container__classic .post-type__icon,.post-type__icon:hover .icn-format,.grid-container__classic .post-type__icon:hover .icn-format,[class*='grid-container__'] .entry-title a.czr-title:hover,input[type=checkbox]:checked::before{color:#efacac}.czr-css-loader > div ,.btn-skin,.btn-skin:active,.btn-skin:focus,.btn-skin:hover,.btn-skin-h-dark,.btn-skin-h-dark.inverted:active,.btn-skin-h-dark.inverted:focus,.btn-skin-h-dark.inverted:hover{border-color:#efacac}.tc-header.border-top{border-top-color:#efacac}[class*='grid-container__'] .entry-title a:hover::after,.grid-container__classic .post-type__icon,.btn-skin,.btn-skin.inverted:active,.btn-skin.inverted:focus,.btn-skin.inverted:hover,.btn-skin-h-dark,.btn-skin-h-dark.inverted:active,.btn-skin-h-dark.inverted:focus,.btn-skin-h-dark.inverted:hover,.sidebar .widget-title::after,input[type=radio]:checked::before{background-color:#efacac}.btn-skin-light:active,.btn-skin-light:focus,.btn-skin-light:hover,.btn-skin-light.inverted{color:#fbecec}input:not([type='submit']):not([type='button']):not([type='number']):not([type='checkbox']):not([type='radio']):focus,textarea:focus,.btn-skin-light,.btn-skin-light.inverted,.btn-skin-light:active,.btn-skin-light:focus,.btn-skin-light:hover,.btn-skin-light.inverted:active,.btn-skin-light.inverted:focus,.btn-skin-light.inverted:hover{border-color:#fbecec}.btn-skin-light,.btn-skin-light.inverted:active,.btn-skin-light.inverted:focus,.btn-skin-light.inverted:hover{background-color:#fbecec}.btn-skin-lightest:active,.btn-skin-lightest:focus,.btn-skin-lightest:hover,.btn-skin-lightest.inverted{color:#ffffff}.btn-skin-lightest,.btn-skin-lightest.inverted,.btn-skin-lightest:active,.btn-skin-lightest:focus,.btn-skin-lightest:hover,.btn-skin-lightest.inverted:active,.btn-skin-lightest.inverted:focus,.btn-skin-lightest.inverted:hover{border-color:#ffffff}.btn-skin-lightest,.btn-skin-lightest.inverted:active,.btn-skin-lightest.inverted:focus,.btn-skin-lightest.inverted:hover{background-color:#ffffff}.pagination,a:hover,a:focus,a:active,.btn-skin-dark:active,.btn-skin-dark:focus,.btn-skin-dark:hover,.btn-skin-dark.inverted,.btn-skin-dark-oh:active,.btn-skin-dark-oh:focus,.btn-skin-dark-oh:hover,.post-info a:not(.btn):hover,.grid-container__classic .post-type__icon .icn-format,[class*='grid-container__'] .hover .entry-title a,.widget-area a:not(.btn):hover,a.czr-format-link:hover,.format-link.hover a.czr-format-link,button[type=submit]:hover,button[type=submit]:active,button[type=submit]:focus,input[type=submit]:hover,input[type=submit]:active,input[type=submit]:focus,.tabs .nav-link:hover,.tabs .nav-link.active,.tabs .nav-link.active:hover,.tabs .nav-link.active:focus{color:#e57979}.grid-container__classic.tc-grid-border .grid__item,.btn-skin-dark,.btn-skin-dark.inverted,button[type=submit],input[type=submit],.btn-skin-dark:active,.btn-skin-dark:focus,.btn-skin-dark:hover,.btn-skin-dark.inverted:active,.btn-skin-dark.inverted:focus,.btn-skin-dark.inverted:hover,.btn-skin-h-dark:active,.btn-skin-h-dark:focus,.btn-skin-h-dark:hover,.btn-skin-h-dark.inverted,.btn-skin-h-dark.inverted,.btn-skin-h-dark.inverted,.btn-skin-dark-oh:active,.btn-skin-dark-oh:focus,.btn-skin-dark-oh:hover,.btn-skin-dark-oh.inverted:active,.btn-skin-dark-oh.inverted:focus,.btn-skin-dark-oh.inverted:hover,button[type=submit]:hover,button[type=submit]:active,button[type=submit]:focus,input[type=submit]:hover,input[type=submit]:active,input[type=submit]:focus{border-color:#e57979}.btn-skin-dark,.btn-skin-dark.inverted:active,.btn-skin-dark.inverted:focus,.btn-skin-dark.inverted:hover,.btn-skin-h-dark:active,.btn-skin-h-dark:focus,.btn-skin-h-dark:hover,.btn-skin-h-dark.inverted,.btn-skin-h-dark.inverted,.btn-skin-h-dark.inverted,.btn-skin-dark-oh.inverted:active,.btn-skin-dark-oh.inverted:focus,.btn-skin-dark-oh.inverted:hover,.grid-container__classic .post-type__icon:hover,button[type=submit],input[type=submit],.czr-link-hover-underline .widgets-list-layout-links a:not(.btn)::before,.czr-link-hover-underline .widget_archive a:not(.btn)::before,.czr-link-hover-underline .widget_nav_menu a:not(.btn)::before,.czr-link-hover-underline .widget_rss ul a:not(.btn)::before,.czr-link-hover-underline .widget_recent_entries a:not(.btn)::before,.czr-link-hover-underline .widget_categories a:not(.btn)::before,.czr-link-hover-underline .widget_meta a:not(.btn)::before,.czr-link-hover-underline .widget_recent_comments a:not(.btn)::before,.czr-link-hover-underline .widget_pages a:not(.btn)::before,.czr-link-hover-underline .widget_calendar a:not(.btn)::before,[class*='grid-container__'] .hover .entry-title a::after,a.czr-format-link::before,.comment-author a::before,.comment-link::before,.tabs .nav-link.active::before{background-color:#e57979}.btn-skin-dark-shaded:active,.btn-skin-dark-shaded:focus,.btn-skin-dark-shaded:hover,.btn-skin-dark-shaded.inverted{background-color:rgba(229,121,121,0.2)}.btn-skin-dark-shaded,.btn-skin-dark-shaded.inverted:active,.btn-skin-dark-shaded.inverted:focus,.btn-skin-dark-shaded.inverted:hover{background-color:rgba(229,121,121,0.8)}.tc-header,#tc-sn .tc-sn-inner,.czr-overlay,.add-menu-button,.tc-header .socials a,.tc-header .socials a:focus,.tc-header .socials a:active,.nav__utils,.nav__utils a,.nav__utils a:focus,.nav__utils a:active,.header-contact__info a,.header-contact__info a:focus,.header-contact__info a:active,.czr-overlay a:hover,.dropdown-menu,.tc-header .navbar-brand-sitename,[class*=nav__menu] .nav__link,[class*=nav__menu] .nav__link-wrapper .caret__dropdown-toggler,[class*=nav__menu] .dropdown-menu .nav__link,[class*=nav__menu] .dropdown-item .nav__link:hover,.tc-header form.czr-form label,.czr-overlay form.czr-form label,.tc-header .czr-form input:not([type='submit']):not([type='button']):not([type='number']):not([type='checkbox']):not([type='radio']),.tc-header .czr-form textarea,.tc-header .czr-form .form-control,.czr-overlay .czr-form input:not([type='submit']):not([type='button']):not([type='number']):not([type='checkbox']):not([type='radio']),.czr-overlay .czr-form textarea,.czr-overlay .czr-form .form-control,.tc-header h1,.tc-header h2,.tc-header h3,.tc-header h4,.tc-header h5,.tc-header h6{color:#eaeaea}.tc-header .czr-form input:not([type='submit']):not([type='button']):not([type='number']):not([type='checkbox']):not([type='radio']),.tc-header .czr-form textarea,.tc-header .czr-form .form-control,.czr-overlay .czr-form input:not([type='submit']):not([type='button']):not([type='number']):not([type='checkbox']):not([type='radio']),.czr-overlay .czr-form textarea,.czr-overlay .czr-form .form-control{border-color:#eaeaea}.ham__toggler-span-wrapper .line,[class*=nav__menu] .nav__title::before{background-color:#eaeaea}.header-tagline,[class*=nav__menu] .nav__link:hover,[class*=nav__menu] .nav__link-wrapper .caret__dropdown-toggler:hover,[class*=nav__menu] .show:not(.dropdown-item) > .nav__link,[class*=nav__menu] .show:not(.dropdown-item) > .nav__link-wrapper .nav__link,.czr-highlight-contextual-menu-items [class*=nav__menu] li:not(.dropdown-item).current-active > .nav__link,.czr-highlight-contextual-menu-items [class*=nav__menu] li:not(.dropdown-item).current-active > .nav__link-wrapper .nav__link,.czr-highlight-contextual-menu-items [class*=nav__menu] .current-menu-item > .nav__link,.czr-highlight-contextual-menu-items [class*=nav__menu] .current-menu-item > .nav__link-wrapper .nav__link,[class*=nav__menu] .dropdown-item .nav__link,.czr-overlay a,.tc-header .socials a:hover,.nav__utils a:hover,.czr-highlight-contextual-menu-items .nav__utils a.current-active,.header-contact__info a:hover,.tc-header .czr-form .form-group.in-focus label,.czr-overlay .czr-form .form-group.in-focus label{color:rgba(234,234,234,0.7)}.nav__utils .ham-toggler-menu.czr-collapsed:hover .line{background-color:rgba(234,234,234,0.7)}.topbar-navbar__wrapper,.dropdown-item:not(:last-of-type){border-color:rgba(234,234,234,0.09)}.tc-header{border-bottom-color:rgba(234,234,234,0.09)}#tc-sn{outline-color:rgba(234,234,234,0.09)}.mobile-nav__container,.header-search__container,.mobile-nav__nav,.vertical-nav > li:not(:last-of-type){border-color:rgba(234,234,234,0.075)}.tc-header,#tc-sn .tc-sn-inner,.dropdown-menu,.dropdown-item:active,.dropdown-item:focus,.dropdown-item:hover{background-color:#237772}.sticky-transparent.is-sticky .mobile-sticky,.sticky-transparent.is-sticky .desktop-sticky,.sticky-transparent.is-sticky .mobile-nav__nav,.header-transparent:not(.is-sticky) .mobile-nav__nav,.header-transparent:not(.is-sticky) .dropdown-menu{background-color:rgba(35,119,114,0.9)}.czr-overlay{background-color:rgba(35,119,114,0.98)}.dropdown-item:before,.vertical-nav .caret__dropdown-toggler{background-color:rgba(220,136,141,0.045)}@media (min-width: 576px){ .czr-boxed-layout .container{ padding-right: 30px; padding-left:  30px; } }@media (min-width: 576px){ .czr-boxed-layout .container{ width: 570px } }@media (min-width: 768px){ .czr-boxed-layout .container{ width: 750px } }@media (min-width: 992px){ .czr-boxed-layout .container{ width: 990px } }@media (min-width: 1200px){ .czr-boxed-layout .container{ width: 1170px } }.navbar-brand,.header-tagline,h1,h2,h3,.tc-dropcap { font-family : 'Neuton'; }
-body { font-family : 'Neuton'; }
-
-              body {
-                font-size : 1.19rem;
-                line-height : 1.5em;
-              }
-
-        .tc-header{
-          z-index:1000
-        }
-.tc-singular-thumbnail-wrapper .entry-media__wrapper {
-                max-height: 200px;
-                height :200px
-              }
-
-@media (min-width: 576px ){
-.tc-singular-thumbnail-wrapper .entry-media__wrapper {
-                  max-height: 250px;
-                  height :250px
-                }
-}
-
-#czr-push-footer { display: none; visibility: hidden; }
-        .czr-sticky-footer #czr-push-footer.sticky-footer-enabled { display: block; }</style>
-<link rel="stylesheet" id="bar_styles-css" href="./../wp-content/plugins/skt-skill-bar/skill_bar/bar/sbar.css?ver=5.8.2" media="all">
-<link rel="stylesheet" id="circle_styles-css" href="./../wp-content/plugins/skt-skill-bar/skill_bar/circle/jquery.easy-pie-chart.css?ver=5.8.2" media="all">
-<link rel="stylesheet" id="skt_verticleline_css-css" href="./../wp-content/plugins/skt-skill-bar/skill_bar/css/custom.css?ver=5.8.2" media="all">
+<link rel="stylesheet" id="ab-animate-css" href="./../wp-content/plugins/animated-blocks/dist/assets/css/animate.min.css?ver=1644574777" media="">
+<link rel="stylesheet" id="ab-animated-block-css" href="./../wp-content/plugins/animated-blocks/dist/blocks.style.build.css?ver=1644574777" media="all">
+<link rel="stylesheet" id="wp-components-css" href="./../wp-includes/css/dist/components/style.min.css?ver=5.9" media="all">
+<link rel="stylesheet" id="wp-block-editor-css" href="./../wp-includes/css/dist/block-editor/style.min.css?ver=5.9" media="all">
+<link rel="stylesheet" id="wp-nux-css" href="./../wp-includes/css/dist/nux/style.min.css?ver=5.9" media="all">
+<link rel="stylesheet" id="wp-reusable-blocks-css" href="./../wp-includes/css/dist/reusable-blocks/style.min.css?ver=5.9" media="all">
+<link rel="stylesheet" id="wp-editor-css" href="./../wp-includes/css/dist/editor/style.min.css?ver=5.9" media="all">
+<link rel="stylesheet" id="drop_shadow_block-style-css-css" href="./../wp-content/plugins/drop-shadow-boxes/block/blocks.style.build.css?ver=1.7.4" media="all">
+<link rel="stylesheet" id="wp_plugin_info_card-cgb-style-css-css" href="./../wp-content/plugins/wp-plugin-info-card/dist/main.css?ver=3.3.0" media="all">
+<style id="global-styles-inline-css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}</style>
+<link rel="stylesheet" id="raratheme-companion-css" href="./../wp-content/plugins/raratheme-companion/public/css/raratheme-companion-public.min.css?ver=1.3.9" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="./../wp-content/themes/oceanwp/assets/fonts/fontawesome/css/all.min.css?ver=5.15.1" media="all">
+<link rel="stylesheet" id="simple-line-icons-css" href="./../wp-content/themes/oceanwp/assets/css/third/simple-line-icons.min.css?ver=2.4.0" media="all">
+<link rel="stylesheet" id="oceanwp-style-css" href="./../wp-content/themes/oceanwp/assets/css/style.min.css?ver=3.1.3" media="all">
+<link rel="stylesheet" id="oceanwp-google-font-benchnine-css" href="//fonts.googleapis.com/css?family=BenchNine%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100i%2C200i%2C300i%2C400i%2C500i%2C600i%2C700i%2C800i%2C900i&#038;subset&#038;display=swap&#038;ver=5.9" media="all">
+<link rel="stylesheet" id="oceanwp-google-font-bungee-inline-css" href="//fonts.googleapis.com/css?family=Bungee+Inline%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100i%2C200i%2C300i%2C400i%2C500i%2C600i%2C700i%2C800i%2C900i&#038;subset&#038;display=swap&#038;ver=5.9" media="all">
+<link rel="stylesheet" id="bar_styles-css" href="./../wp-content/plugins/skt-skill-bar/skill_bar/bar/sbar.css?ver=5.9" media="all">
+<link rel="stylesheet" id="circle_styles-css" href="./../wp-content/plugins/skt-skill-bar/skill_bar/circle/jquery.easy-pie-chart.css?ver=5.9" media="all">
+<link rel="stylesheet" id="skt_verticleline_css-css" href="./../wp-content/plugins/skt-skill-bar/skill_bar/css/custom.css?ver=5.9" media="all">
 <script src="./../wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
 <script src="./../wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
-<script src="./../wp-content/themes/customizr/assets/front/js/libs/modernizr.min.js?ver=4.4.18" id="modernizr-js"></script>
-<script src="./../wp-includes/js/underscore.min.js?ver=1.13.1" id="underscore-js"></script>
-<script id="tc-scripts-js-extra">
-var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/","mainScriptUrl":".\/wp-content\/themes\/customizr\/assets\/front\/js\/tc-scripts.min.js?4.4.18","deferFontAwesome":"1","fontAwesomeUrl":".\/wp-content\/themes\/customizr\/assets\/shared\/fonts\/fa\/css\/fontawesome-all.min.css?4.4.18","_disabled":[],"centerSliderImg":"1","isLightBoxEnabled":"1","SmoothScroll":{"Enabled":true,"Options":{"touchpadSupport":false}},"isAnchorScrollEnabled":"1","anchorSmoothScrollExclude":{"simple":["[class*=edd]",".carousel-control","[data-toggle=\"modal\"]","[data-toggle=\"dropdown\"]","[data-toggle=\"czr-dropdown\"]","[data-toggle=\"tooltip\"]","[data-toggle=\"popover\"]","[data-toggle=\"collapse\"]","[data-toggle=\"czr-collapse\"]","[data-toggle=\"tab\"]","[data-toggle=\"pill\"]","[data-toggle=\"czr-pill\"]","[class*=upme]","[class*=um-]"],"deep":{"classes":[],"ids":[]}},"timerOnScrollAllBrowsers":"1","centerAllImg":"1","HasComments":"","LoadModernizr":"1","stickyHeader":"","extLinksStyle":"","extLinksTargetExt":"","extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"dropcapEnabled":"","dropcapWhere":{"post":"","page":""},"dropcapMinWords":"","dropcapSkipSelectors":{"tags":["IMG","IFRAME","H1","H2","H3","H4","H5","H6","BLOCKQUOTE","UL","OL"],"classes":["btn"],"id":[]},"imgSmartLoadEnabled":"","imgSmartLoadOpts":{"parentSelectors":["[class*=grid-container], .article-container",".__before_main_wrapper",".widget-front",".post-related-articles",".tc-singular-thumbnail-wrapper",".sek-module-inner"],"opts":{"excludeImg":[".tc-holder-img"]}},"imgSmartLoadsForSliders":"1","pluginCompats":[],"isWPMobile":"","menuStickyUserSettings":{"desktop":"stick_up","mobile":"stick_up"},"adminAjaxUrl":".\/wp-admin\/admin-ajax.php","ajaxUrl":".\/?czrajax=1","frontNonce":{"id":"CZRFrontNonce","handle":"99c232d805"},"isDevMode":"","isModernStyle":"1","i18n":{"Permanently dismiss":"Fermer définitivement"},"frontNotifications":{"welcome":{"enabled":false,"content":"","dismissAction":"dismiss_welcome_note_front"}},"preloadGfonts":"1","googleFonts":"Neuton","version":"4.4.18"};
-</script>
-<script src="./../wp-content/themes/customizr/assets/front/js/tc-scripts.min.js?ver=4.4.18" id="tc-scripts-js" defer></script>
-<script src="./../wp-content/plugins/skt-skill-bar/skill_bar/bar/jquery.appear.js?ver=5.8.2" id="bar_script-js"></script>
+<script src="./../wp-content/themes/oceanwp/assets/js/vendors/smoothscroll.min.js?ver=3.1.3" id="ow-smoothscroll-js"></script>
+<script src="./../wp-content/plugins/skt-skill-bar/skill_bar/bar/jquery.appear.js?ver=5.9" id="bar_script-js"></script>
 <link rel="https://api.w.org/" href="./../wp-json/index.html">
 <link rel="alternate" type="application/json" href="./../wp-json/wp/v2/pages/186/index.html">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./../wp-includes/wlwmanifest.xml"> 
-<meta name="generator" content="WordPress 5.8.2">
+<meta name="generator" content="WordPress 5.9">
 <link rel="canonical" href="./index.html">
 <link rel="shortlink" href="./../index.html?p=186">
 <link rel="alternate" type="application/json+oembed" href="./../wp-json/oembed/1.0/embed/index.html?url=.%2Fdomoticz-sur-raspberry-pi%2F">
@@ -99,218 +72,228 @@ var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/
 		/* write your JavaScript code here */
 
 	</script>
-              <link rel="preload" as="font" type="font/woff2" href="./../wp-content/themes/customizr/assets/shared/fonts/customizr/customizr.woff2?128396981" crossorigin="anonymous">
-            <link rel="icon" href="./../wp-content/uploads/2020/10/myAvatar-110x110.png" sizes="32x32">
+<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<link rel="icon" href="./../wp-content/uploads/2020/10/myAvatar-110x110.png" sizes="32x32">
 <link rel="icon" href="./../wp-content/uploads/2020/10/myAvatar-300x300.png" sizes="192x192">
 <link rel="apple-touch-icon" href="./../wp-content/uploads/2020/10/myAvatar-300x300.png">
 <meta name="msapplication-TileImage" content="./wp-content/uploads/2020/10/myAvatar-300x300.png">
-		<style id="wp-custom-css">/*
+		<style id="wp-custom-css">site-header.top-header #site-logo #site-description h2{font-size:26px}</style>
+		<!-- OceanWP CSS -->
+<style type="text/css">.page-header{background-color:#ffffff}/* General CSS */a:hover,a.light:hover,.theme-heading .text::before,.theme-heading .text::after,#top-bar-content >a:hover,#top-bar-social li.oceanwp-email a:hover,#site-navigation-wrap .dropdown-menu >li >a:hover,#site-header.medium-header #medium-searchform button:hover,.oceanwp-mobile-menu-icon a:hover,.blog-entry.post .blog-entry-header .entry-title a:hover,.blog-entry.post .blog-entry-readmore a:hover,.blog-entry.thumbnail-entry .blog-entry-category a,ul.meta li a:hover,.dropcap,.single nav.post-navigation .nav-links .title,body .related-post-title a:hover,body #wp-calendar caption,body .contact-info-widget.default i,body .contact-info-widget.big-icons i,body .custom-links-widget .oceanwp-custom-links li a:hover,body .custom-links-widget .oceanwp-custom-links li a:hover:before,body .posts-thumbnails-widget li a:hover,body .social-widget li.oceanwp-email a:hover,.comment-author .comment-meta .comment-reply-link,#respond #cancel-comment-reply-link:hover,#footer-widgets .footer-box a:hover,#footer-bottom a:hover,#footer-bottom #footer-bottom-menu a:hover,.sidr a:hover,.sidr-class-dropdown-toggle:hover,.sidr-class-menu-item-has-children.active >a,.sidr-class-menu-item-has-children.active >a >.sidr-class-dropdown-toggle,input[type=checkbox]:checked:before{color:#dd9933}.single nav.post-navigation .nav-links .title .owp-icon use,.blog-entry.post .blog-entry-readmore a:hover .owp-icon use,body .contact-info-widget.default .owp-icon use,body .contact-info-widget.big-icons .owp-icon use{stroke:#dd9933}input[type="button"],input[type="reset"],input[type="submit"],button[type="submit"],.button,#site-navigation-wrap .dropdown-menu >li.btn >a >span,.thumbnail:hover i,.post-quote-content,.omw-modal .omw-close-modal,body .contact-info-widget.big-icons li:hover i,body div.wpforms-container-full .wpforms-form input[type=submit],body div.wpforms-container-full .wpforms-form button[type=submit],body div.wpforms-container-full .wpforms-form .wpforms-page-button{background-color:#dd9933}.thumbnail:hover .link-post-svg-icon{background-color:#dd9933}body .contact-info-widget.big-icons li:hover .owp-icon{background-color:#dd9933}.widget-title{border-color:#dd9933}blockquote{border-color:#dd9933}#searchform-dropdown{border-color:#dd9933}.dropdown-menu .sub-menu{border-color:#dd9933}.blog-entry.large-entry .blog-entry-readmore a:hover{border-color:#dd9933}.oceanwp-newsletter-form-wrap input[type="email"]:focus{border-color:#dd9933}.social-widget li.oceanwp-email a:hover{border-color:#dd9933}#respond #cancel-comment-reply-link:hover{border-color:#dd9933}body .contact-info-widget.big-icons li:hover i{border-color:#dd9933}#footer-widgets .oceanwp-newsletter-form-wrap input[type="email"]:focus{border-color:#dd9933}blockquote,.wp-block-quote{border-left-color:#dd9933}body .contact-info-widget.big-icons li:hover .owp-icon{border-color:#dd9933}input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover,button[type="submit"]:hover,input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,button[type="submit"]:focus,.button:hover,#site-navigation-wrap .dropdown-menu >li.btn >a:hover >span,.post-quote-author,.omw-modal .omw-close-modal:hover,body div.wpforms-container-full .wpforms-form input[type=submit]:hover,body div.wpforms-container-full .wpforms-form button[type=submit]:hover,body div.wpforms-container-full .wpforms-form .wpforms-page-button:hover{background-color:}table th,table td,hr,.content-area,body.content-left-sidebar #content-wrap .content-area,.content-left-sidebar .content-area,#top-bar-wrap,#site-header,#site-header.top-header #search-toggle,.dropdown-menu ul li,.centered-minimal-page-header,.blog-entry.post,.blog-entry.grid-entry .blog-entry-inner,.blog-entry.thumbnail-entry .blog-entry-bottom,.single-post .entry-title,.single .entry-share-wrap .entry-share,.single .entry-share,.single .entry-share ul li a,.single nav.post-navigation,.single nav.post-navigation .nav-links .nav-previous,#author-bio,#author-bio .author-bio-avatar,#author-bio .author-bio-social li a,#related-posts,#comments,.comment-body,#respond #cancel-comment-reply-link,#blog-entries .type-page,.page-numbers a,.page-numbers span:not(.elementor-screen-only),.page-links span,body #wp-calendar caption,body #wp-calendar th,body #wp-calendar tbody,body .contact-info-widget.default i,body .contact-info-widget.big-icons i,body .posts-thumbnails-widget li,body .tagcloud a{border-color:}body .contact-info-widget.big-icons .owp-icon,body .contact-info-widget.default .owp-icon{border-color:}.boxed-layout #wrap,.boxed-layout .parallax-footer,.boxed-layout .owp-floating-bar{width:1282px}.container{width:1267px}@media only screen and (min-width:960px){.content-area,.content-left-sidebar .content-area{width:46%}}@media only screen and (min-width:960px){.widget-area,.content-left-sidebar .widget-area{width:16%}}#main #content-wrap,.separate-layout #main #content-wrap{padding-top:0}.page-header,.has-transparent-header .page-header{padding:49px 0 4px 0}#scroll-top{bottom:47px}#scroll-top{width:60px;height:60px;line-height:60px}#scroll-top{font-size:23px}#scroll-top .owp-icon{width:23px;height:23px}#scroll-top{border-radius:40px}#scroll-top{background-color:#dd9933}.page-numbers a,.page-numbers span:not(.elementor-screen-only),.page-links span{font-size:16px}.page-numbers a,.page-numbers span:not(.elementor-screen-only),.page-links span{border-width:2px}.theme-button,input[type="submit"],button[type="submit"],button,.button,body div.wpforms-container-full .wpforms-form input[type=submit],body div.wpforms-container-full .wpforms-form button[type=submit],body div.wpforms-container-full .wpforms-form .wpforms-page-button{border-radius:69px}#blog-entries ul.meta li i{color:#ffffff}#blog-entries ul.meta li .owp-icon use{stroke:#ffffff}.single-post ul.meta li i{color:#ffffff}.single-post ul.meta li .owp-icon use{stroke:#ffffff}/* Header CSS */#site-header.top-header .oceanwp-social-menu,#site-header.top-header #search-toggle{height:50px}#site-header.top-header #site-navigation-wrap .dropdown-menu >li >a,#site-header.top-header .oceanwp-mobile-menu-icon a,.mobile-menu-close{line-height:50px}#site-header,.has-transparent-header .is-sticky #site-header,.has-vh-transparent .is-sticky #site-header.vertical-header,#searchform-header-replace{background-color:#304869}#site-header{border-color:#ad0025}#site-header-inner{padding:0 0 0 220px}#site-header.top-header .header-top,#site-header.top-header #searchform-header-replace{background-color:#304869}#site-header.has-header-media .overlay-header-media{background-color:rgba(0,0,0,0.5)}#site-logo a.site-logo-text{color:#ffffff}#site-logo a.site-logo-text:hover{color:#ef8113}.effect-one #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after,.effect-three #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after,.effect-five #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:before,.effect-five #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after,.effect-nine #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:before,.effect-nine #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after{background-color:#dd9933}.effect-four #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:before,.effect-four #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after,.effect-seven #site-navigation-wrap .dropdown-menu >li >a.menu-link:hover >span:after,.effect-seven #site-navigation-wrap .dropdown-menu >li.sfHover >a.menu-link >span:after{color:#dd9933}.effect-seven #site-navigation-wrap .dropdown-menu >li >a.menu-link:hover >span:after,.effect-seven #site-navigation-wrap .dropdown-menu >li.sfHover >a.menu-link >span:after{text-shadow:10px 0 #dd9933,-10px 0 #dd9933}.effect-two #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after,.effect-eight #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:before,.effect-eight #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after{background-color:#dd5252}.effect-six #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:before,.effect-six #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after{border-color:#dd5252}.effect-ten #site-navigation-wrap .dropdown-menu >li >a.menu-link:hover >span,.effect-ten #site-navigation-wrap .dropdown-menu >li.sfHover >a.menu-link >span{-webkit-box-shadow:0 0 10px 4px #dd5252;-moz-box-shadow:0 0 10px 4px #dd5252;box-shadow:0 0 10px 4px #dd5252}#site-navigation-wrap .dropdown-menu >li >a,.oceanwp-mobile-menu-icon a,#searchform-header-replace-close{color:#dddddd}#site-navigation-wrap .dropdown-menu >li >a .owp-icon use,.oceanwp-mobile-menu-icon a .owp-icon use,#searchform-header-replace-close .owp-icon use{stroke:#dddddd}#site-navigation-wrap .dropdown-menu >li >a:hover,.oceanwp-mobile-menu-icon a:hover,#searchform-header-replace-close:hover{color:#dd9933}#site-navigation-wrap .dropdown-menu >li >a:hover .owp-icon use,.oceanwp-mobile-menu-icon a:hover .owp-icon use,#searchform-header-replace-close:hover .owp-icon use{stroke:#dd9933}#site-navigation-wrap .dropdown-menu >.current-menu-item >a,#site-navigation-wrap .dropdown-menu >.current-menu-ancestor >a,#site-navigation-wrap .dropdown-menu >.current-menu-item >a:hover,#site-navigation-wrap .dropdown-menu >.current-menu-ancestor >a:hover{color:#dd9933}.dropdown-menu .sub-menu{min-width:320px}.dropdown-menu .sub-menu,#searchform-dropdown,.current-shop-items-dropdown{background-color:#304869}.dropdown-menu ul li a.menu-link{color:#ffffff}.dropdown-menu ul li a.menu-link .owp-icon use{stroke:#ffffff}.dropdown-menu ul li a.menu-link:hover{color:#dd9933}.dropdown-menu ul li a.menu-link:hover .owp-icon use{stroke:#dd9933}.dropdown-menu ul li a.menu-link:hover{background-color:#304869}.dropdown-menu ul >.current-menu-item >a.menu-link{color:#dd9933}.dropdown-menu ul >.current-menu-item >a.menu-link{background-color:#304869}.navigation li.mega-cat .mega-cat-title{background-color:#ffffff}@media (max-width:767px){#top-bar-nav,#site-navigation-wrap,.oceanwp-social-menu,.after-header-content{display:none}.center-logo #site-logo{float:none;position:absolute;left:50%;padding:0;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#site-header.center-header #site-logo,.oceanwp-mobile-menu-icon,#oceanwp-cart-sidebar-wrap{display:block}body.vertical-header-style #outer-wrap{margin:0 !important}#site-header.vertical-header{position:relative;width:100%;left:0 !important;right:0 !important}#site-header.vertical-header .has-template >#site-logo{display:block}#site-header.vertical-header #site-header-inner{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;align-items:center;padding:0;max-width:90%}#site-header.vertical-header #site-header-inner >*:not(.oceanwp-mobile-menu-icon){display:none}#site-header.vertical-header #site-header-inner >*{padding:0 !important}#site-header.vertical-header #site-header-inner #site-logo{display:block;margin:0;width:50%;text-align:left}body.rtl #site-header.vertical-header #site-header-inner #site-logo{text-align:right}#site-header.vertical-header #site-header-inner .oceanwp-mobile-menu-icon{width:50%;text-align:right}body.rtl #site-header.vertical-header #site-header-inner .oceanwp-mobile-menu-icon{text-align:left}#site-header.vertical-header .vertical-toggle,body.vertical-header-style.vh-closed #site-header.vertical-header .vertical-toggle{display:none}#site-logo.has-responsive-logo .custom-logo-link{display:none}#site-logo.has-responsive-logo .responsive-logo-link{display:block}.is-sticky #site-logo.has-sticky-logo .responsive-logo-link{display:none}.is-sticky #site-logo.has-responsive-logo .sticky-logo-link{display:block}#top-bar.has-no-content #top-bar-social.top-bar-left,#top-bar.has-no-content #top-bar-social.top-bar-right{position:inherit;left:auto;right:auto;float:none;height:auto;line-height:1.5em;margin-top:0;text-align:center}#top-bar.has-no-content #top-bar-social li{float:none;display:inline-block}.owp-cart-overlay,#side-panel-wrap a.side-panel-btn{display:none !important}}/* Top Bar CSS */#top-bar{padding:22px 0 26px 0}#top-bar-wrap,.oceanwp-top-bar-sticky{background-color:#787884}#top-bar-wrap{border-color:#969696}#top-bar-wrap,#top-bar-content strong{color:#0a0a0a}/* Footer Widgets CSS */#footer-widgets{background-color:#bd5bc6}/* Footer Bottom CSS */#footer-bottom{background-color:#304869}#footer-bottom,#footer-bottom p{color:#ffffff}/* Sidebar CSS */.widget-title{margin-bottom:63px}/* Typography CSS */body{font-family:BenchNine;font-weight:400;font-style:normal;font-size:20px;color:#0a0a0a;line-height:2;letter-spacing:1px}h1,h2,h3,h4,h5,h6,.theme-heading,.widget-title,.oceanwp-widget-recent-posts-title,.comment-reply-title,.entry-title,.sidebar-box .widget-title{font-family:Lucida Sans Unicode,Lucida Grande,sans-serif}h1{font-family:BenchNine;font-size:30px;line-height:2;letter-spacing:1px}#site-logo a.site-logo-text{font-family:Bungee Inline;font-size:50px;line-height:2.5;letter-spacing:5px}#top-bar-content,#top-bar-social-alt{font-family:Arial Black,Gadget,sans-serif}#site-navigation-wrap .dropdown-menu >li >a,#site-header.full_screen-header .fs-dropdown-menu >li >a,#site-header.top-header #site-navigation-wrap .dropdown-menu >li >a,#site-header.center-header #site-navigation-wrap .dropdown-menu >li >a,#site-header.medium-header #site-navigation-wrap .dropdown-menu >li >a,.oceanwp-mobile-menu-icon a{font-family:BenchNine;font-weight:500;font-style:normal;font-size:19px;letter-spacing:1.4px}.dropdown-menu ul li a.menu-link,#site-header.full_screen-header .fs-dropdown-menu ul.sub-menu li a{font-family:BenchNine;font-size:17px;letter-spacing:2.2px}.page-header .page-header-title,.page-header.background-image-page-header .page-header-title{font-family:BenchNine;font-size:42px;line-height:1.1;letter-spacing:3.3px;text-transform:uppercase}#footer-bottom #copyright{font-size:14px;line-height:1.3}</style>
+</head>
 
-.tc-header {
-    height: 300px;
-}
+<body class="page-template-default page page-id-186 wp-embed-responsive oceanwp-theme dropdown-mobile boxed-layout top-header-style no-header-border content-full-width content-max-width" itemscope="itemscope" itemtype="https://schema.org/WebPage">
 
-*/
+	
+	
+	<div id="outer-wrap" class="site clr">
 
-/*
+		<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
 
-.desktop-sticky, .mobile-sticky {
-   /* box-shadow: 0 0 5px rgb(0 0 0 / 20%), 0 1px 0 rgb(255 255 255 / 15%);
-    transition: -webkit-transform .35s ease-in-out,height .25s ease-in-out,background-color .45s ease-in-out;
-    transition: transform .35s ease-in-out,height .25s ease-in-out,background-color .45s ease-in-out;
-}
+		
+		<div id="wrap" class="clr">
 
-*/
+			
+			
+<header id="site-header" class="top-header effect-four clr" data-height="97" itemscope="itemscope" itemtype="https://schema.org/WPHeader" role="banner">
 
+	
+		
+	<div class="header-bottom clr">
+		<div class="container">
+			
 
-.card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-	border-radius: 25px;
-}
+<div id="site-logo" class="clr" itemscope itemtype="https://schema.org/Brand">
 
-/* On mouse-over, add a deeper shadow 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+	
+	<div id="site-logo-inner" class="clr">
 
-/* Add some padding inside the card container */
-.container {
-  padding: 20px 16px;
-}
+						<a href="./../index.html" rel="home" class="site-title site-logo-text" style="color:#ffffff;">Audren Teissier</a>
+				
+	</div>
+<!-- #site-logo-inner -->
 
-.center-div {
-     margin:  auto;
-     width: 100px; 
-}</style>
-		</head>
-
-  <body class="page-template-default page page-id-186 wp-embed-responsive czr-link-hover-underline header-skin-custom footer-skin-light czr-no-sidebar tc-center-images czr-boxed-layout customizr-4-4-18 czr-sticky-footer">
-          <a class="screen-reader-text skip-link" href="#content">Passer au contenu</a>
-    
-    
-    <div id="tc-page-wrap" class="container czr-boxed">
-
-      <header class="tpnav-header__header tc-header logo_centered sticky-brand-shrink-on czr-submenu-fade czr-submenu-move czr-highlight-contextual-menu-items">
-        <div class="primary-navbar__wrapper d-none d-lg-block has-horizontal-menu desktop-sticky">
-  <div class="container">
-    <div class="row align-items-center flex-row primary-navbar__row">
-      <div class="branding__container col col-auto">
-  <div class="branding align-items-center flex-column ">
-    <div class="branding-row d-flex flex-row align-items-center">
-      <span class="navbar-brand col-auto ">
-    <a class="navbar-brand-sitename " href="./../index.html">
-    <span>Audren Teissier</span>
-  </a>
-</span>
-      </div>
-    <span class="header-tagline ">
-  Site/Portfolio</span>
-
-  </div>
+	
+				<div id="site-description"><h2 style="color:#ffffff;">Site/Portfolio</h2></div>
+			
 </div>
-      <div class="primary-nav__container justify-content-lg-around col col-lg-auto flex-lg-column">
-  <div class="primary-nav__wrapper flex-lg-row align-items-center justify-content-end">
-              <nav class="primary-nav__nav col" id="primary-nav">
-          <div class="nav__menu-wrapper primary-nav__menu-wrapper justify-content-end czr-open-on-hover">
-<ul id="main-menu" class="primary-nav__menu regular-nav nav__menu nav">
-<li id="menu-item-15" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-15"><a href="./../index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-admin-home" aria-hidden="true"></i><span>Accueil</span></span></a></li>
-<li id="menu-item-259" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-259"><a href="./../informatique/index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-desktop" aria-hidden="true"></i><span>Informatique</span></span></a></li>
-<li id="menu-item-214" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-214"><a href="./../english/index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-admin-site" aria-hidden="true"></i><span>Anglais</span></span></a></li>
-<li id="menu-item-79" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-ancestor current-menu-parent menu-item-has-children czr-dropdown current-active menu-item-79">
-<a data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" href="./../category/realisations/index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-admin-tools" aria-hidden="true"></i><span>Réalisations</span></span><span class="caret__dropdown-toggler"><i class="icn-down-small"></i></span></a>
-<ul class="dropdown-menu czr-dropdown-menu">
-	<li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-53"><a href="./../application-android/index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-video-alt3" aria-hidden="true"></i><span>Application Android (Java)</span></span></a></li>
-	<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-51"><a href="./../bataille-navale-en-c/index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-desktop" aria-hidden="true"></i><span>Bataille navale (C)</span></span></a></li>
-	<li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-52"><a href="./../scripts-domotique-python/index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-controls-volumeon" aria-hidden="true"></i><span>Multiroom Bose (Python)</span></span></a></li>
-	<li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-64"><a href="./../domotique/index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-lightbulb" aria-hidden="true"></i><span>Domotique avec Sonoff</span></span></a></li>
-	<li id="menu-item-190" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-186 current_page_item dropdown-item current-active menu-item-190"><a href="./index.html" aria-current="page" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-dashboard" aria-hidden="true"></i><span>Domoticz sur Raspberry Pi</span></span></a></li>
-	<li id="menu-item-420" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children czr-dropdown-submenu dropdown-item menu-item-420">
-<a data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" href="./../impression-3d-2/index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-admin-customizer" aria-hidden="true"></i><span>Impression 3D</span></span><span class="caret__dropdown-toggler"><i class="icn-down-small"></i></span></a>
-<ul class="dropdown-menu czr-dropdown-menu">
-		<li id="menu-item-360" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-360"><a href="./../impression-3d/index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-editor-aligncenter" aria-hidden="true"></i><span>En Vrac</span></span></a></li>
-		<li id="menu-item-421" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-421"><a href="./../violon-electrique/index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-format-audio" aria-hidden="true"></i><span>Violon électrique</span></span></a></li>
-</ul>
+<!-- #site-logo -->
+
+		</div>
+	</div>
+	
+<div class="header-top clr">
+
+	
+	<div id="site-header-inner" class="clr">
+
+		
+		<div class="left clr">
+
+			<div class="inner">
+
+							<div id="site-navigation-wrap" class="no-top-border clr">
+			
+			
+			
+			<nav id="site-navigation" class="navigation main-navigation clr" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" role="navigation">
+
+				<ul id="menu-primary" class="main-menu dropdown-menu sf-menu">
+<li id="menu-item-15" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-15"><a href="./../index.html" class="menu-link"><span class="text-wrap"><i class="_mi _before dashicons dashicons-admin-home" aria-hidden="true"></i><span>Accueil</span></span></a></li>
+<li id="menu-item-259" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-259"><a href="./../informatique/index.html" class="menu-link"><span class="text-wrap"><i class="_mi _before dashicons dashicons-desktop" aria-hidden="true"></i><span>Informatique</span></span></a></li>
+<li id="menu-item-214" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-214"><a href="./../english/index.html" class="menu-link"><span class="text-wrap"><i class="_mi _before dashicons dashicons-admin-site" aria-hidden="true"></i><span>Anglais</span></span></a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-ancestor current-menu-parent menu-item-has-children dropdown menu-item-79">
+<a href="./../category/realisations/index.html" class="menu-link"><span class="text-wrap"><i class="_mi _before dashicons dashicons-admin-tools" aria-hidden="true"></i><span>Réalisations<i class="nav-arrow fa fa-angle-down" aria-hidden="true" role="img"></i></span></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="./../application-android/index.html" class="menu-link"><span class="text-wrap"><i class="_mi _before dashicons dashicons-video-alt3" aria-hidden="true"></i><span>Application Android (Java)</span></span></a></li>	<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="./../bataille-navale-en-c/index.html" class="menu-link"><span class="text-wrap"><i class="_mi _before dashicons dashicons-desktop" aria-hidden="true"></i><span>Bataille navale (C)</span></span></a></li>	<li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a href="./../scripts-domotique-python/index.html" class="menu-link"><span class="text-wrap"><i class="_mi _before dashicons dashicons-controls-volumeon" aria-hidden="true"></i><span>Multiroom Bose (Python)</span></span></a></li>	<li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="./../domotique/index.html" class="menu-link"><span class="text-wrap"><i class="_mi _before dashicons dashicons-lightbulb" aria-hidden="true"></i><span>Domotique avec Sonoff</span></span></a></li>	<li id="menu-item-190" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-186 current_page_item menu-item-190"><a href="./index.html" class="menu-link"><span class="text-wrap"><i class="_mi _before dashicons dashicons-dashboard" aria-hidden="true"></i><span>Domoticz sur Raspberry Pi</span></span></a></li>	<li id="menu-item-420" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-420">
+<a href="./../impression-3d-2/index.html" class="menu-link"><span class="text-wrap"><i class="_mi _before dashicons dashicons-admin-customizer" aria-hidden="true"></i><span>Impression 3D<i class="nav-arrow fa fa-angle-right" aria-hidden="true" role="img"></i></span></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-360" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-360"><a href="./../impression-3d/index.html" class="menu-link"><span class="text-wrap"><i class="_mi _before dashicons dashicons-editor-aligncenter" aria-hidden="true"></i><span>En Vrac</span></span></a></li>		<li id="menu-item-421" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-421"><a href="./../violon-electrique/index.html" class="menu-link"><span class="text-wrap"><i class="_mi _before dashicons dashicons-format-audio" aria-hidden="true"></i><span>Violon électrique</span></span></a></li>	</ul>
 </li>
 </ul>
 </li>
-<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="./../contact/index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-businessman" aria-hidden="true"></i><span>Contact</span></span></a></li>
+<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="./../contact/index.html" class="menu-link"><span class="text-wrap"><i class="_mi _before dashicons dashicons-businessman" aria-hidden="true"></i><span>Contact</span></span></a></li>
 </ul>
-</div>        </nav>
-      </div>
-</div>
-    </div>
-  </div>
-</div>    <div class="mobile-navbar__wrapper d-lg-none mobile-sticky">
-    <div class="branding__container justify-content-between align-items-center container">
-  <div class="branding flex-column">
-    <div class="branding-row d-flex align-self-start flex-row align-items-center">
-      <span class="navbar-brand col-auto ">
-    <a class="navbar-brand-sitename " href="./../index.html">
-    <span>Audren Teissier</span>
-  </a>
-</span>
-    </div>
-    <span class="header-tagline col col-auto">
-  Site/Portfolio</span>
+			</nav><!-- #site-navigation -->
 
-  </div>
-  <div class="mobile-utils__wrapper nav__utils regular-nav">
-    <ul class="nav utils row flex-row flex-nowrap">
-      <li class="nav__search ">
-  <a href="#" class="search-toggle_btn icn-search czr-dropdown" data-aria-haspopup="true" aria-expanded="false"><span class="sr-only">Search</span></a>
-        <div class="czr-search-expand">
-      <div class="czr-search-expand-inner"><div class="search-form__container ">
-  <form action="./" method="get" class="czr-form search-form">
-    <div class="form-group czr-focus">
-            <label for="s-618d41a620315" id="lsearch-618d41a620315">
-        <span class="screen-reader-text">Rechercher</span>
-        <input id="s-618d41a620315" class="form-control czr-search-field" name="s" type="search" value="" aria-describedby="lsearch-618d41a620315" placeholder="Rechercher &hellip;">
-      </label>
-      <button type="submit" class="button"><i class="icn-search"></i><span class="screen-reader-text">Rechercher &hellip;</span></button>
-    </div>
-  </form>
-</div></div>
-    </div>
-        <ul class="dropdown-menu czr-dropdown-menu">
-      <li class="header-search__container container">
-  <div class="search-form__container ">
-  <form action="./" method="get" class="czr-form search-form">
-    <div class="form-group czr-focus">
-            <label for="s-618d41a620690" id="lsearch-618d41a620690">
-        <span class="screen-reader-text">Rechercher</span>
-        <input id="s-618d41a620690" class="form-control czr-search-field" name="s" type="search" value="" aria-describedby="lsearch-618d41a620690" placeholder="Rechercher &hellip;">
-      </label>
-      <button type="submit" class="button"><i class="icn-search"></i><span class="screen-reader-text">Rechercher &hellip;</span></button>
-    </div>
-  </form>
-</div>
-</li>    </ul>
-  </li>
-<li class="hamburger-toggler__container ">
-  <button class="ham-toggler-menu czr-collapsed" data-toggle="czr-collapse" data-target="#mobile-nav"><span class="ham__toggler-span-wrapper"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></span><span class="screen-reader-text">Menu</span></button>
-</li>
-    </ul>
-  </div>
-</div>
-<div class="mobile-nav__container ">
-   <nav class="mobile-nav__nav flex-column czr-collapse" id="mobile-nav">
-      <div class="mobile-nav__inner container">
-      <div class="nav__menu-wrapper mobile-nav__menu-wrapper czr-open-on-click">
-<ul id="mobile-nav-menu" class="mobile-nav__menu vertical-nav nav__menu flex-column nav">
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-15"><a href="./../index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-admin-home" aria-hidden="true"></i><span>Accueil</span></span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-259"><a href="./../informatique/index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-desktop" aria-hidden="true"></i><span>Informatique</span></span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-214"><a href="./../english/index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-admin-site" aria-hidden="true"></i><span>Anglais</span></span></a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-ancestor current-menu-parent menu-item-has-children czr-dropdown current-active menu-item-79">
-<span class="display-flex nav__link-wrapper align-items-start"><a href="./../category/realisations/index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-admin-tools" aria-hidden="true"></i><span>Réalisations</span></span></a><button data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" class="caret__dropdown-toggler czr-btn-link"><i class="icn-down-small"></i></button></span>
-<ul class="dropdown-menu czr-dropdown-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-53"><a href="./../application-android/index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-video-alt3" aria-hidden="true"></i><span>Application Android (Java)</span></span></a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-51"><a href="./../bataille-navale-en-c/index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-desktop" aria-hidden="true"></i><span>Bataille navale (C)</span></span></a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-52"><a href="./../scripts-domotique-python/index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-controls-volumeon" aria-hidden="true"></i><span>Multiroom Bose (Python)</span></span></a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-64"><a href="./../domotique/index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-lightbulb" aria-hidden="true"></i><span>Domotique avec Sonoff</span></span></a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-186 current_page_item dropdown-item current-active menu-item-190"><a href="./index.html" aria-current="page" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-dashboard" aria-hidden="true"></i><span>Domoticz sur Raspberry Pi</span></span></a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children czr-dropdown-submenu dropdown-item menu-item-420">
-<span class="display-flex nav__link-wrapper align-items-start"><a href="./../impression-3d-2/index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-admin-customizer" aria-hidden="true"></i><span>Impression 3D</span></span></a><button data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" class="caret__dropdown-toggler czr-btn-link"><i class="icn-down-small"></i></button></span>
-<ul class="dropdown-menu czr-dropdown-menu">
-		<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-360"><a href="./../impression-3d/index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-editor-aligncenter" aria-hidden="true"></i><span>En Vrac</span></span></a></li>
-		<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-421"><a href="./../violon-electrique/index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-format-audio" aria-hidden="true"></i><span>Violon électrique</span></span></a></li>
-</ul>
+			
+			
+					</div>
+<!-- #site-navigation-wrap -->
+			
+		
+	
+				
+	
+	<div class="oceanwp-mobile-menu-icon clr mobile-right">
+
+		
+		
+		
+		<a href="#" class="mobile-menu" aria-label="Menu mobile">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+								<span class="oceanwp-text">Menu</span>
+				<span class="oceanwp-close-text">Fermer</span>
+						</a>
+
+		
+		
+		
+	</div>
+<!-- #oceanwp-mobile-menu-navbar -->
+
+	
+
+			</div>
+
+		</div>
+
+		<div class="right clr">
+
+			<div class="inner">
+
+				
+			</div>
+
+		</div>
+
+	</div>
+<!-- #site-header-inner -->
+
+	
+<div id="mobile-dropdown" class="clr">
+
+	<nav class="clr" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+
+		<ul id="menu-primary-1" class="menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-15"><a href="./../index.html"><i class="_mi _before dashicons dashicons-admin-home" aria-hidden="true"></i><span>Accueil</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-259"><a href="./../informatique/index.html"><i class="_mi _before dashicons dashicons-desktop" aria-hidden="true"></i><span>Informatique</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-214"><a href="./../english/index.html"><i class="_mi _before dashicons dashicons-admin-site" aria-hidden="true"></i><span>Anglais</span></a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-ancestor current-menu-parent menu-item-has-children menu-item-79">
+<a href="./../category/realisations/index.html"><i class="_mi _before dashicons dashicons-admin-tools" aria-hidden="true"></i><span>Réalisations</span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="./../application-android/index.html"><i class="_mi _before dashicons dashicons-video-alt3" aria-hidden="true"></i><span>Application Android (Java)</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="./../bataille-navale-en-c/index.html"><i class="_mi _before dashicons dashicons-desktop" aria-hidden="true"></i><span>Bataille navale (C)</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a href="./../scripts-domotique-python/index.html"><i class="_mi _before dashicons dashicons-controls-volumeon" aria-hidden="true"></i><span>Multiroom Bose (Python)</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="./../domotique/index.html"><i class="_mi _before dashicons dashicons-lightbulb" aria-hidden="true"></i><span>Domotique avec Sonoff</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-186 current_page_item menu-item-190"><a href="./index.html" aria-current="page"><i class="_mi _before dashicons dashicons-dashboard" aria-hidden="true"></i><span>Domoticz sur Raspberry Pi</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-420">
+<a href="./../impression-3d-2/index.html"><i class="_mi _before dashicons dashicons-admin-customizer" aria-hidden="true"></i><span>Impression 3D</span></a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-360"><a href="./../impression-3d/index.html"><i class="_mi _before dashicons dashicons-editor-aligncenter" aria-hidden="true"></i><span>En Vrac</span></a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-421"><a href="./../violon-electrique/index.html"><i class="_mi _before dashicons dashicons-format-audio" aria-hidden="true"></i><span>Violon électrique</span></a></li>
+	</ul>
 </li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="./../contact/index.html" class="nav__link"><span class="nav__title"><i class="_mi _before dashicons dashicons-businessman" aria-hidden="true"></i><span>Contact</span></span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="./../contact/index.html"><i class="_mi _before dashicons dashicons-businessman" aria-hidden="true"></i><span>Contact</span></a></li>
 </ul>
-</div>      </div>
-  </nav>
+<div id="mobile-menu-search" class="clr">
+	<form aria-label="Rechercher sur ce site" method="get" action="./" class="mobile-searchform" role="search">
+		<input aria-label="Insert search query" value="" class="field" id="ocean-mobile-search-1" type="search" name="s" autocomplete="off" placeholder="Rechercher">
+		<button aria-label="Envoyer la recherche" type="submit" class="searchform-submit">
+			<i class=" icon-magnifier" aria-hidden="true" role="img"></i>		</button>
+					</form>
 </div>
-</div></header>
+<!-- .mobile-menu-search -->
+
+	</nav>
+
+</div>
+
+	
+</div>
+<!-- .header-top -->
 
 
-  
-    <div id="main-wrapper" class="section">
+		
+		
+</header><!-- #site-header -->
 
-                      
 
-          
-          <div class="container" role="main">
+			
+			<main id="main" class="site-main clr" role="main">
 
-            
-            <div class="flex-row row column-content-wrapper">
+				
 
-                
-                <div id="content" class="col-12 article-container">
+<header class="page-header">
 
-                  <article id="page-186" class="post-186 page type-page status-publish czr-hentry">
-    <header class="entry-header ">
-  <div class="entry-header-inner">
-        <h1 class="entry-title">Domoticz sur Raspberry Pi</h1>
-      </div>
-</header>  <div class="post-entry tc-content-inner">
-    <section class="post-content entry-content ">
-      <div class="czr-wp-the-content">
-        
-<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="713" height="375" src="./../wp-content/uploads/2020/10/Domoticz-Jessie.png" alt="" class="wp-image-198" srcset="./../wp-content/uploads/2020/10/Domoticz-Jessie.png 713w, ./../wp-content/uploads/2020/10/Domoticz-Jessie-300x158.png 300w" sizes="(max-width: 713px) 100vw, 713px"></figure></div>
+	
+	<div class="container clr page-header-inner">
+
+		
+			<h1 class="page-header-title clr" itemprop="headline">Domoticz sur Raspberry Pi</h1>
+
+			
+		
+		
+	</div>
+<!-- .page-header-inner -->
+
+	
+	
+</header><!-- .page-header -->
+
+
+	
+	<div id="content-wrap" class="container clr">
+
+		
+		<div id="primary" class="content-area clr">
+
+			
+			<div id="content" class="site-content clr">
+
+				
+				
+<article class="single-page-article clr">
+
+	
+<div class="entry clr" itemprop="text">
+
+	
+	
+<div class="wp-block-image"><figure class="aligncenter size-large"><img width="713" height="375" src="./../wp-content/uploads/2020/10/Domoticz-Jessie.png" alt="" class="wp-image-198" srcset="./../wp-content/uploads/2020/10/Domoticz-Jessie.png 713w, ./../wp-content/uploads/2020/10/Domoticz-Jessie-300x158.png 300w" sizes="(max-width: 713px) 100vw, 713px"></figure></div>
 
 
 
@@ -333,53 +316,81 @@ var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/
 
 
 <p></p>
-      </div>
-      <footer class="post-footer clearfix">
-                      </footer>
-    </section><!-- .entry-content -->
-  </div>
-<!-- .post-entry -->
-  </article>                </div>
 
-                
-            </div>
-<!-- .column-content-wrapper -->
-
-            
-
-          </div>
-<!-- .container -->
-
-          <div id="czr-push-footer"></div>
-    </div>
-<!-- #main-wrapper -->
-
-    
-    
-<footer id="footer" class="footer__wrapper">
-  <div id="colophon" class="colophon ">
-  <div class="container">
-    <div class="colophon__row row flex-row justify-content-between">
-      <div class="col-12 col-sm-auto">
-        <div id="footer__credits" class="footer__credits">
-  <p class="czr-copyright">
-    <span class="czr-copyright-text">&copy;&nbsp;2021&nbsp;</span><a class="czr-copyright-link" href="./../index.html" title="Audren Teissier">Audren Teissier</a><span class="czr-rights-text">&nbsp;&ndash;&nbsp;Tous droits réservés</span>
-  </p>
-  <p class="czr-credits">
-    <span class="czr-designer">
-      <span class="czr-wp-powered"><span class="czr-wp-powered-text">Propulsé par&nbsp;</span><a class="czr-wp-powered-link" title="Propulsé par WordPress" href="https://www.wordpress.org/" target="_blank" rel="noopener noreferrer">WP</a></span><span class="czr-designer-text">&nbsp;&ndash;&nbsp;Réalisé avec the <a class="czr-designer-link" href="https://presscustomizr.com/customizr" title="Thème Customizr">Thème Customizr</a></span>
-    </span>
-  </p>
+	
 </div>
-      </div>
-          </div>
-  </div>
-</div>
-</footer>
-    </div>
-<!-- end #tc-page-wrap -->
 
-    <button class="btn czr-btt czr-btta right"><i class="icn-up-small"></i></button>
+</article>
+
+				
+			</div>
+<!-- #content -->
+
+			
+		</div>
+<!-- #primary -->
+
+		
+	</div>
+<!-- #content-wrap -->
+
+	
+
+	</main><!-- #main -->
+
+	
+	
+	
+		
+<footer id="footer" class="site-footer" itemscope="itemscope" itemtype="https://schema.org/WPFooter" role="contentinfo">
+
+	
+	<div id="footer-inner" class="clr">
+
+		
+
+<div id="footer-bottom" class="clr no-footer-nav">
+
+	
+	<div id="footer-bottom-inner" class="container clr">
+
+		
+		
+			<div id="copyright" class="clr" role="contentinfo">
+				Copyright Audren Teissier - OceanWP Theme			</div>
+<!-- #copyright -->
+
+			
+	</div>
+<!-- #footer-bottom-inner -->
+
+	
+</div>
+<!-- #footer-bottom -->
+
+
+	</div>
+<!-- #footer-inner -->
+
+	
+</footer><!-- #footer -->
+
+	
+	
+</div>
+<!-- #wrap -->
+
+
+</div>
+<!-- #outer-wrap -->
+
+
+
+<a aria-label="Scroll to the top of the page" href="#" id="scroll-top" class="scroll-top-right"><i class=" fa fa-arrow-up" aria-hidden="true" role="img"></i></a>
+
+
+
+
 	<script type="text/javascript">
 		function atomicBlocksShare( url, title, w, h ){
 			var left = ( window.innerWidth / 2 )-( w / 2 );
@@ -387,15 +398,27 @@ var CZRParams = {"assetsPath":".\/wp-content\/themes\/customizr\/assets\/front\/
 			return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=600, height=600, top='+top+', left='+left);
 		}
 	</script>
-	<script src="./../wp-content/plugins/animated-blocks/dist/assets/js/scrollClass.js?ver=1.0" id="gutenberg_animated_blocks-scroll-class-js"></script>
+	<script src="./../wp-content/plugins/raratheme-companion/public/js/isotope.pkgd.min.js?ver=3.0.5" id="isotope-pkgd-js"></script>
+<script src="./../wp-includes/js/imagesloaded.min.js?ver=4.1.4" id="imagesloaded-js"></script>
+<script src="./../wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script>
+<script src="./../wp-content/plugins/raratheme-companion/public/js/raratheme-companion-public.min.js?ver=1.3.9" id="raratheme-companion-js"></script>
+<script src="./../wp-content/plugins/raratheme-companion/public/js/fontawesome/all.min.js?ver=5.6.3" id="all-js"></script>
+<script src="./../wp-content/plugins/raratheme-companion/public/js/fontawesome/v4-shims.min.js?ver=5.6.3" id="v4-shims-js"></script>
 <script src="./../wp-content/plugins/atomic-blocks/dist/assets/js/dismiss.js?ver=1635792235" id="atomic-blocks-dismiss-js-js"></script>
-<script src="./../wp-includes/js/comment-reply.min.js?ver=5.8.2" id="comment-reply-js"></script>
-<script src="./../wp-includes/js/jquery/ui/core.min.js?ver=1.12.1" id="jquery-ui-core-js"></script>
-<script src="./../wp-includes/js/jquery/ui/effect.min.js?ver=1.12.1" id="jquery-effects-core-js"></script>
+<script src="./../wp-content/themes/oceanwp/assets/js/vendors/isotope.pkgd.min.js?ver=3.0.6" id="ow-isotop-js"></script>
+<script src="./../wp-content/themes/oceanwp/assets/js/vendors/flickity.pkgd.min.js?ver=3.1.3" id="ow-flickity-js"></script>
+<script src="./../wp-content/themes/oceanwp/assets/js/vendors/sidr.js?ver=3.1.3" id="ow-sidr-js"></script>
+<script src="./../wp-content/themes/oceanwp/assets/js/vendors/magnific-popup.min.js?ver=3.1.3" id="ow-magnific-popup-js"></script>
+<script id="oceanwp-main-js-extra">
+var oceanwpLocalize = {"nonce":"b3ed8e0ac4","isRTL":"","menuSearchStyle":"disabled","mobileMenuSearchStyle":"disabled","sidrSource":null,"sidrDisplace":"1","sidrSide":"left","sidrDropdownTarget":"link","verticalHeaderTarget":"link","customSelects":".woocommerce-ordering .orderby, #dropdown_product_cat, .widget_categories select, .widget_archive select, .single-product .variations_form .variations select"};
+</script>
+<script src="./../wp-content/themes/oceanwp/assets/js/theme.vanilla.min.js?ver=3.1.3" id="oceanwp-main-js"></script>
 <script src="./../wp-content/plugins/skt-skill-bar/skill_bar/circle/jquery.easy-pie-chart.js?ver=1.7" id="circle_script-js"></script>
 <script src="./../wp-content/plugins/skt-skill-bar/skill_bar/circle/custom.js?ver=1.7" id="circle_custom_script-js"></script>
 <script src="./../wp-content/plugins/skt-skill-bar/skill_bar/gage/justgage.js?ver=1.7" id="gage_script-js"></script>
 <script src="./../wp-content/plugins/skt-skill-bar/skill_bar/gage/raphael-2.1.4.min.js?ver=1.7" id="gage_raphael_script-js"></script>
-<script src="./../wp-includes/js/wp-embed.min.js?ver=5.8.2" id="wp-embed-js"></script>
-  </body>
-  </html>
+<!--[if lt IE 9]>
+<script src='./wp-content/themes/oceanwp/assets/js/third/html5.min.js?ver=3.1.3' id='html5shiv-js'></script>
+<![endif]-->
+</body>
+</html>
